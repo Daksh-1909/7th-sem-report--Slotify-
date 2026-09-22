@@ -1,23 +1,77 @@
 \chapter{Introduction}
 
-\section{Executive Summary \& Platform Capabilities}
+\section{Background and Motivation}
+Most people who have tried to book an appointment at a local clinic or salon know the routine. A customer calls, waits on hold, confirms a time, writes it down, and hopes the other side remembers too. Sometimes the appointment goes smoothly, but often it is missed, double-booked, or forgotten because the process depends entirely on manual coordination.
 
-Appointment scheduling across modern service businesses (salons, clinics, consulting firms, fitness studios) suffers from severe architectural flaws:
+This problem is common in small service businesses where operations are still largely managed through phone calls, paper registers, and informal memory. For example, a salon owner may keep a physical register of appointments, yet still face missed bookings, cancelled slots, or confusion over staff availability. Even when digital tools exist, many of them are too expensive, too complicated, or not designed for the needs of small local businesses.
+
+The motivation for \textbf{Slotify} came from this gap in the market. Small service businesses need a simple, affordable, and reliable online system that helps customers book appointments quickly while letting service providers manage schedules more efficiently. The aim is to reduce manual work, avoid schedule conflicts, improve communication, and provide a smoother booking experience for both customers and businesses.
+
+\section{Problem Statement}
+Manual coordination overhead and appointment attrition are two sides of the same issue. When bookings are managed over phone calls or handwritten records, every transaction requires a human in the loop. Someone must confirm the time, record the booking, check for conflicts, and follow up with reminders. This works at low volume, but it breaks down as the business grows.
+
+At the same time, no-shows and empty slots create revenue loss. Customers forget appointments, a cancellation is not re-filled quickly, or the business has no real-time visibility into scheduling gaps. Without reminders or automated slot management, small businesses lose time, money, and customer trust. 
+
+Another major challenge is that many booking systems are designed for large organizations and do not fit the needs of small businesses such as salons, clinics, and wellness centres. These businesses need flexible calendars, staff assignments, and an easy process for managing appointments without unnecessary complexity.
+
+\section{Project Objectives}
+The main objectives of the project are as follows:
 
 \begin{enumerate}
-\item \textbf{Race Conditions \& Double Bookings}: When multiple users book the same specialist at the same time, naive database queries fail to prevent overlaps.
-\item \textbf{Retroactive Price Creep}: Altering a service price alters historical revenue and past booking receipts retroactively if pricing is not snapshot-isolated.
-\item \textbf{Calendar Isolation}: Lack of 2-way calendar sync causes forgotten appointments, customer no-shows, and fragmented schedules.
-\item \textbf{Unverified Reviews \& Spam}: Platforms allow anyone to post reviews, distorting business credibility.
+\item To build a customer-facing booking system that allows users to search for service providers, view available time slots, and book appointments without manual phone coordination.
+\item To develop a provider dashboard for managing schedules, staff availability, and service timing efficiently.
+\item To implement a real-time appointment mechanism that prevents double bookings and reduces schedule conflicts.
+\item To provide automated confirmation and reminder emails so customers do not forget their appointments.
+\item To create a simple and user-friendly interface for both customers and service providers.
+\item To support business analytics such as appointment trends, cancellation rates, and workload distribution.
 \end{enumerate}
 
-\textbf{Slotify} resolves all four challenges through:
+\section{Scope}
+The current scope of the project covers service-based businesses that operate on a time-slot model, such as clinics, salons, tutoring services, and physiotherapy centres. The system is designed for multiple independent businesses, each with separate data and access controls.
+
+The platform focuses on online appointment scheduling, business management, and automated notifications. Native mobile applications and in-app payment processing are outside the scope of the current phase, but they are considered as future enhancements.
+
+\section{System Overview}
+\textbf{Slotify} is a web-based platform that connects customers, service providers, and business administrators through a single scheduling system. Customers can browse services, check provider availability, and book appointments after selecting suitable time slots. Service providers can manage their working hours, assign staff, and monitor bookings from a dedicated dashboard.
+
+The system is designed to handle the full booking lifecycle, from service discovery and slot selection to confirmation and reminder notifications. It also supports business-level data tracking, making it easier for owners to understand busy periods and improve operational decisions.
+
+The key idea behind the system is to automate the scheduling process while keeping the interface simple and accessible. This reduces administrative effort and creates a more professional experience for customers.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{images/Top-Level System Overview of Slotify.png}
+\caption{System overview of the Slotify appointment workflow}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Key scheduling challenges and their solutions in Slotify}
+\begin{tabular}{|p{5cm}|p{7cm}|}
+\hline
+\textbf{Problem} & \textbf{How Slotify solves it} \\
+\hline
+Double booking & Real-time slot checking and conflict prevention during appointment creation \\
+\hline
+Missed appointments & Confirmation emails and reminder notifications sent to customers \\
+\hline
+Manual coordination & Digital booking system reduces dependence on phone calls and paper records \\
+\hline
+Low business visibility & Dashboard tracks bookings, workload, and appointment trends \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Technology Stack}
+The project is developed using the MERN stack, which provides a flexible and scalable foundation for building a web application. The stack includes:
 
 \begin{itemize}
-\item \textbf{Hardware-Enforced Atomic Concurrency Locks}: Leveraging MongoDB compound partial unique indexing to make double-booking physically impossible at the database engine level.
-\item \textbf{Immutable Snapshot Pricing}: Every booking permanently freezes \texttt{priceAtBooking} (Rs. INR) and \texttt{durationAtBooking}, preserving audit integrity regardless of future rate card edits.
-\item \textbf{2-Way Calendar Synchronization}: Live RFC-5545 iCalendar (\texttt{.ics}) generation for Apple/Outlook calendars and instant 1-click Google Calendar integration.
-\item \textbf{Brevo Transactional Automation}: Multi-role HTML email pipelines for confirmation, 24-hour reminders, 2-hour reminders, cancellation, rescheduling, and post-session review invitations.
-\item \textbf{Verified Customer Scorecards}: Only customers who completed a verified appointment can submit 1–5 star reviews and feedback for both the business and individual specialists.
-\item \textbf{Multi-Tenant Architecture with Walk-In Mode}: Isolated portals for Customers, Business Owners (Admins), and Staff Specialists, complemented by a rapid Walk-In (POS) interface for reception desks.
+\item \textbf{MongoDB}: A NoSQL database used to store business details, users, appointments, services, and booking records.
+\item \textbf{Express.js}: A backend framework used to define APIs and manage server-side logic.
+\item \textbf{React.js}: A frontend library used to build the user interface and provide a responsive user experience.
+\item \textbf{Node.js}: A JavaScript runtime environment used for server-side execution.
 \end{itemize}
+
+The application also uses authentication mechanisms such as JWT (JSON Web Tokens) and Google OAuth for secure login and user verification. Appointment notifications are sent using Nodemailer, which enables real-time email confirmations and automated reminder messages. This combination of technologies allows the system to be scalable, secure, and easy to maintain.
+
+In summary, \textbf{Slotify} addresses the scheduling challenges faced by small service businesses by delivering a digital, automated, and user-friendly appointment booking solution.

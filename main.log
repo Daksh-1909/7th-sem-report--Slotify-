@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  22 SEP 2026 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  23 SEP 2026 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -213,15 +213,7 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 \inpenc@prehook=\toks24
 \inpenc@posthook=\toks25
 )
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
-Package: color 2026-05-17 v1.3f Standard LaTeX Color (DPC)
-
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 149.
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
-) (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
@@ -821,7 +813,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 33.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
 Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
@@ -984,7 +976,6 @@ Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
-LaTeX Info: Redefining \color on input line 762.
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
@@ -1000,335 +991,6 @@ Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
 new hooks used!!
 \minrowclearance=\skip86
 \rownum=\count348
-)
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/xwatermark\xwatermark.s
-ty
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/catoptions\catoptions.s
-ty
-\m@one=\count349
-\z@pt=\dimen272
-Package: catoptions 2023/10/29 v0.2.7i Securing catcodes and parsing options (A
-M)
-
-
-Package catoptions Warning: 
-(catoptions)                catoptions modifies package option handling and is
-(catoptions)                incompatible with many other packages.
-(catoptions)                For new documents it is recommended to use
-(catoptions)                The built in option processor:
-(catoptions)                \ProcessKeyOptions, see clsguide.
-
-\cpt@csvdepth=\count350
-\cpt@optdepth=\count351
-\cpt@cnta=\count352
-\indrisdepth=\count353
-\cpt@foreachdepth=\count354
-\cpt@exprcnt=\count355
-)
-Package: xwatermark 2012/10/23 v1.5.2d A dynamic watermarking scheme (Ahmed Mus
-a)
- (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/base\fix-cm.sty
-Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1)
- on input line 49.
-LaTeX Encoding Info:    Redeclaring text command \capitalogonek (encoding TS1) 
-on input line 52.
-LaTeX Encoding Info:    Redeclaring text command \capitalgrave (encoding TS1) o
-n input line 55.
-LaTeX Encoding Info:    Redeclaring text command \capitalacute (encoding TS1) o
-n input line 56.
-LaTeX Encoding Info:    Redeclaring text command \capitalcircumflex (encoding T
-S1) on input line 57.
-LaTeX Encoding Info:    Redeclaring text command \capitaltilde (encoding TS1) o
-n input line 58.
-LaTeX Encoding Info:    Redeclaring text command \capitaldieresis (encoding TS1
-) on input line 59.
-LaTeX Encoding Info:    Redeclaring text command \capitalhungarumlaut (encoding
- TS1) on input line 60.
-LaTeX Encoding Info:    Redeclaring text command \capitalring (encoding TS1) on
- input line 61.
-LaTeX Encoding Info:    Redeclaring text command \capitalcaron (encoding TS1) o
-n input line 62.
-LaTeX Encoding Info:    Redeclaring text command \capitalbreve (encoding TS1) o
-n input line 63.
-LaTeX Encoding Info:    Redeclaring text command \capitalmacron (encoding TS1) 
-on input line 64.
-LaTeX Encoding Info:    Redeclaring text command \capitaldotaccent (encoding TS
-1) on input line 65.
-LaTeX Encoding Info:    Redeclaring text command \t (encoding TS1) on input lin
-e 66.
-LaTeX Encoding Info:    Redeclaring text command \capitaltie (encoding TS1) on 
-input line 67.
-LaTeX Encoding Info:    Redeclaring text command \newtie (encoding TS1) on inpu
-t line 68.
-LaTeX Encoding Info:    Redeclaring text command \capitalnewtie (encoding TS1) 
-on input line 69.
-LaTeX Encoding Info:    Redeclaring text symbol \textcapitalcompwordmark (encod
-ing TS1) on input line 70.
-LaTeX Encoding Info:    Redeclaring text symbol \textascendercompwordmark (enco
-ding TS1) on input line 71.
-LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightbase (encodin
-g TS1) on input line 72.
-LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightdblbase (enco
-ding TS1) on input line 73.
-LaTeX Encoding Info:    Redeclaring text symbol \texttwelveudash (encoding TS1)
- on input line 74.
-LaTeX Encoding Info:    Redeclaring text symbol \textthreequartersemdash (encod
-ing TS1) on input line 75.
-LaTeX Encoding Info:    Redeclaring text symbol \textleftarrow (encoding TS1) o
-n input line 76.
-LaTeX Encoding Info:    Redeclaring text symbol \textrightarrow (encoding TS1) 
-on input line 77.
-LaTeX Encoding Info:    Redeclaring text symbol \textblank (encoding TS1) on in
-put line 78.
-LaTeX Encoding Info:    Redeclaring text symbol \textdollar (encoding TS1) on i
-nput line 79.
-LaTeX Encoding Info:    Redeclaring text symbol \textquotesingle (encoding TS1)
- on input line 80.
-LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encodin
-g TS1) on input line 81.
-LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphen (encoding TS1) o
-n input line 92.
-LaTeX Encoding Info:    Redeclaring text symbol \textfractionsolidus (encoding 
-TS1) on input line 93.
-LaTeX Encoding Info:    Redeclaring text symbol \textzerooldstyle (encoding TS1
-) on input line 94.
-LaTeX Encoding Info:    Redeclaring text symbol \textoneoldstyle (encoding TS1)
- on input line 95.
-LaTeX Encoding Info:    Redeclaring text symbol \texttwooldstyle (encoding TS1)
- on input line 96.
-LaTeX Encoding Info:    Redeclaring text symbol \textthreeoldstyle (encoding TS
-1) on input line 97.
-LaTeX Encoding Info:    Redeclaring text symbol \textfouroldstyle (encoding TS1
-) on input line 98.
-LaTeX Encoding Info:    Redeclaring text symbol \textfiveoldstyle (encoding TS1
-) on input line 99.
-LaTeX Encoding Info:    Redeclaring text symbol \textsixoldstyle (encoding TS1)
- on input line 100.
-LaTeX Encoding Info:    Redeclaring text symbol \textsevenoldstyle (encoding TS
-1) on input line 101.
-LaTeX Encoding Info:    Redeclaring text symbol \texteightoldstyle (encoding TS
-1) on input line 102.
-LaTeX Encoding Info:    Redeclaring text symbol \textnineoldstyle (encoding TS1
-) on input line 103.
-LaTeX Encoding Info:    Redeclaring text symbol \textlangle (encoding TS1) on i
-nput line 104.
-LaTeX Encoding Info:    Redeclaring text symbol \textminus (encoding TS1) on in
-put line 105.
-LaTeX Encoding Info:    Redeclaring text symbol \textrangle (encoding TS1) on i
-nput line 106.
-LaTeX Encoding Info:    Redeclaring text symbol \textmho (encoding TS1) on inpu
-t line 107.
-LaTeX Encoding Info:    Redeclaring text symbol \textbigcircle (encoding TS1) o
-n input line 108.
-LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on
- input line 109.
-LaTeX Encoding Info:    Redeclaring text symbol \textohm (encoding TS1) on inpu
-t line 115.
-LaTeX Encoding Info:    Redeclaring text symbol \textlbrackdbl (encoding TS1) o
-n input line 116.
-LaTeX Encoding Info:    Redeclaring text symbol \textrbrackdbl (encoding TS1) o
-n input line 117.
-LaTeX Encoding Info:    Redeclaring text symbol \textuparrow (encoding TS1) on 
-input line 118.
-LaTeX Encoding Info:    Redeclaring text symbol \textdownarrow (encoding TS1) o
-n input line 119.
-LaTeX Encoding Info:    Redeclaring text symbol \textasciigrave (encoding TS1) 
-on input line 120.
-LaTeX Encoding Info:    Redeclaring text symbol \textborn (encoding TS1) on inp
-ut line 121.
-LaTeX Encoding Info:    Redeclaring text symbol \textdivorced (encoding TS1) on
- input line 122.
-LaTeX Encoding Info:    Redeclaring text symbol \textdied (encoding TS1) on inp
-ut line 123.
-LaTeX Encoding Info:    Redeclaring text symbol \textleaf (encoding TS1) on inp
-ut line 124.
-LaTeX Encoding Info:    Redeclaring text symbol \textmarried (encoding TS1) on 
-input line 125.
-LaTeX Encoding Info:    Redeclaring text symbol \textmusicalnote (encoding TS1)
- on input line 126.
-LaTeX Encoding Info:    Redeclaring text symbol \texttildelow (encoding TS1) on
- input line 127.
-LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphenchar (encoding TS
-1) on input line 128.
-LaTeX Encoding Info:    Redeclaring text symbol \textasciibreve (encoding TS1) 
-on input line 129.
-LaTeX Encoding Info:    Redeclaring text symbol \textasciicaron (encoding TS1) 
-on input line 130.
-LaTeX Encoding Info:    Redeclaring text symbol \textacutedbl (encoding TS1) on
- input line 131.
-LaTeX Encoding Info:    Redeclaring text symbol \textgravedbl (encoding TS1) on
- input line 132.
-LaTeX Encoding Info:    Redeclaring text symbol \textdagger (encoding TS1) on i
-nput line 133.
-LaTeX Encoding Info:    Redeclaring text symbol \textdaggerdbl (encoding TS1) o
-n input line 134.
-LaTeX Encoding Info:    Redeclaring text symbol \textbardbl (encoding TS1) on i
-nput line 135.
-LaTeX Encoding Info:    Redeclaring text symbol \textperthousand (encoding TS1)
- on input line 136.
-LaTeX Encoding Info:    Redeclaring text symbol \textbullet (encoding TS1) on i
-nput line 137.
-LaTeX Encoding Info:    Redeclaring text symbol \textcelsius (encoding TS1) on 
-input line 138.
-LaTeX Encoding Info:    Redeclaring text symbol \textdollaroldstyle (encoding T
-S1) on input line 139.
-LaTeX Encoding Info:    Redeclaring text symbol \textcentoldstyle (encoding TS1
-) on input line 140.
-LaTeX Encoding Info:    Redeclaring text symbol \textflorin (encoding TS1) on i
-nput line 141.
-LaTeX Encoding Info:    Redeclaring text symbol \textcolonmonetary (encoding TS
-1) on input line 142.
-LaTeX Encoding Info:    Redeclaring text symbol \textwon (encoding TS1) on inpu
-t line 143.
-LaTeX Encoding Info:    Redeclaring text symbol \textnaira (encoding TS1) on in
-put line 144.
-LaTeX Encoding Info:    Redeclaring text symbol \textguarani (encoding TS1) on 
-input line 145.
-LaTeX Encoding Info:    Redeclaring text symbol \textpeso (encoding TS1) on inp
-ut line 146.
-LaTeX Encoding Info:    Redeclaring text symbol \textlira (encoding TS1) on inp
-ut line 147.
-LaTeX Encoding Info:    Redeclaring text symbol \textrecipe (encoding TS1) on i
-nput line 148.
-LaTeX Encoding Info:    Redeclaring text symbol \textinterrobang (encoding TS1)
- on input line 149.
-LaTeX Encoding Info:    Redeclaring text symbol \textinterrobangdown (encoding 
-TS1) on input line 150.
-LaTeX Encoding Info:    Redeclaring text symbol \textdong (encoding TS1) on inp
-ut line 151.
-LaTeX Encoding Info:    Redeclaring text symbol \texttrademark (encoding TS1) o
-n input line 152.
-LaTeX Encoding Info:    Redeclaring text symbol \textpertenthousand (encoding T
-S1) on input line 153.
-LaTeX Encoding Info:    Redeclaring text symbol \textpilcrow (encoding TS1) on 
-input line 154.
-LaTeX Encoding Info:    Redeclaring text symbol \textbaht (encoding TS1) on inp
-ut line 155.
-LaTeX Encoding Info:    Redeclaring text symbol \textnumero (encoding TS1) on i
-nput line 156.
-LaTeX Encoding Info:    Redeclaring text symbol \textdiscount (encoding TS1) on
- input line 157.
-LaTeX Encoding Info:    Redeclaring text symbol \textestimated (encoding TS1) o
-n input line 158.
-LaTeX Encoding Info:    Redeclaring text symbol \textopenbullet (encoding TS1) 
-on input line 159.
-LaTeX Encoding Info:    Redeclaring text symbol \textservicemark (encoding TS1)
- on input line 160.
-LaTeX Encoding Info:    Redeclaring text symbol \textlquill (encoding TS1) on i
-nput line 161.
-LaTeX Encoding Info:    Redeclaring text symbol \textrquill (encoding TS1) on i
-nput line 162.
-LaTeX Encoding Info:    Redeclaring text symbol \textcent (encoding TS1) on inp
-ut line 163.
-LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding TS1) on
- input line 164.
-LaTeX Encoding Info:    Redeclaring text symbol \textcurrency (encoding TS1) on
- input line 165.
-LaTeX Encoding Info:    Redeclaring text symbol \textyen (encoding TS1) on inpu
-t line 166.
-LaTeX Encoding Info:    Redeclaring text symbol \textbrokenbar (encoding TS1) o
-n input line 167.
-LaTeX Encoding Info:    Redeclaring text symbol \textsection (encoding TS1) on 
-input line 168.
-LaTeX Encoding Info:    Redeclaring text symbol \textasciidieresis (encoding TS
-1) on input line 169.
-LaTeX Encoding Info:    Redeclaring text symbol \textcopyright (encoding TS1) o
-n input line 170.
-LaTeX Encoding Info:    Redeclaring text symbol \textordfeminine (encoding TS1)
- on input line 171.
-LaTeX Encoding Info:    Redeclaring text symbol \textcopyleft (encoding TS1) on
- input line 172.
-LaTeX Encoding Info:    Redeclaring text symbol \textlnot (encoding TS1) on inp
-ut line 173.
-LaTeX Encoding Info:    Redeclaring text symbol \textcircledP (encoding TS1) on
- input line 174.
-LaTeX Encoding Info:    Redeclaring text symbol \textregistered (encoding TS1) 
-on input line 175.
-LaTeX Encoding Info:    Redeclaring text symbol \textasciimacron (encoding TS1)
- on input line 176.
-LaTeX Encoding Info:    Redeclaring text symbol \textdegree (encoding TS1) on i
-nput line 177.
-LaTeX Encoding Info:    Redeclaring text symbol \textpm (encoding TS1) on input
- line 178.
-LaTeX Encoding Info:    Redeclaring text symbol \texttwosuperior (encoding TS1)
- on input line 179.
-LaTeX Encoding Info:    Redeclaring text symbol \textthreesuperior (encoding TS
-1) on input line 180.
-LaTeX Encoding Info:    Redeclaring text symbol \textasciiacute (encoding TS1) 
-on input line 181.
-LaTeX Encoding Info:    Redeclaring text symbol \textmu (encoding TS1) on input
- line 182.
-LaTeX Encoding Info:    Redeclaring text symbol \textparagraph (encoding TS1) o
-n input line 183.
-LaTeX Encoding Info:    Redeclaring text symbol \textperiodcentered (encoding T
-S1) on input line 184.
-LaTeX Encoding Info:    Redeclaring text symbol \textreferencemark (encoding TS
-1) on input line 185.
-LaTeX Encoding Info:    Redeclaring text symbol \textonesuperior (encoding TS1)
- on input line 186.
-LaTeX Encoding Info:    Redeclaring text symbol \textordmasculine (encoding TS1
-) on input line 187.
-LaTeX Encoding Info:    Redeclaring text symbol \textsurd (encoding TS1) on inp
-ut line 188.
-LaTeX Encoding Info:    Redeclaring text symbol \textonequarter (encoding TS1) 
-on input line 189.
-LaTeX Encoding Info:    Redeclaring text symbol \textonehalf (encoding TS1) on 
-input line 190.
-LaTeX Encoding Info:    Redeclaring text symbol \textthreequarters (encoding TS
-1) on input line 191.
-LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on inp
-ut line 192.
-LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on in
-put line 193.
-LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on inpu
-t line 194.
-))
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/picture\picture.sty
-Package: picture 2026-03-07 v2 Dimens for picture macros (HO)
-)
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
-
-LaTeX Warning: You have requested package `atbegshi',
-               but the package provides `atbegshi-ltx'.
-
-Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
-package with kernel methods
-)
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
-
-LaTeX Warning: You have requested package `atveryend',
-               but the package provides `atveryend-ltx'.
-
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
-kage
-with kernel methods
-) (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/ltxkeys\ltxkeys.sty
-Package: ltxkeys 2012/11/17 v0.0.3c A robust key-value parser (AM) (Ahmed Musa)
-
-\ltxkeys@csvdepth=\count356
-\ltxkeys@keydepth=\count357
-)
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/framed\framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip87
-\fb@frw=\dimen273
-\fb@frh=\dimen274
-\FrameRule=\dimen275
-\FrameSep=\dimen276
-)
-\xwm@boxa=\box67
-\xwm@boxb=\box68
-\xwm@cnta=\count358
-\xwm@wrt=\write3
-
-(main.xwm)
-\openout3 = `main.xwm'.
-
 )
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/transparent\transparent
 .sty
@@ -1348,14 +1010,14 @@ Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
  (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count359
+\c@float@type=\count349
 \float@exts=\toks33
-\float@box=\box69
+\float@box=\box67
 \@float@everytoks=\toks34
-\@floatcapt=\box70
+\@floatcapt=\box68
 )
 \@float@every@algorithm=\toks35
-\c@algorithm=\count360
+\c@algorithm=\count350
 )
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudoc
 ode.sty
@@ -1366,40 +1028,40 @@ cx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count361
-\c@ALG@rem=\count362
-\c@ALG@nested=\count363
-\ALG@tlm=\skip88
-\ALG@thistlm=\skip89
-\c@ALG@Lnr=\count364
-\c@ALG@blocknr=\count365
-\c@ALG@storecount=\count366
-\c@ALG@tmpcounter=\count367
-\ALG@tmplength=\skip90
+\c@ALG@line=\count351
+\c@ALG@rem=\count352
+\c@ALG@nested=\count353
+\ALG@tlm=\skip87
+\ALG@thistlm=\skip88
+\c@ALG@Lnr=\count354
+\c@ALG@blocknr=\count355
+\c@ALG@storecount=\count356
+\c@ALG@tmpcounter=\count357
+\ALG@tmplength=\skip89
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
-\ESO@tempdima=\dimen277
-\ESO@tempdimb=\dimen278
+\ESO@tempdima=\dimen272
+\ESO@tempdimb=\dimen273
 )
-\AM@pagewidth=\dimen279
-\AM@pageheight=\dimen280
-\AM@fboxrule=\dimen281
+\AM@pagewidth=\dimen274
+\AM@pageheight=\dimen275
+\AM@fboxrule=\dimen276
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count368
-\AM@pagebox=\box71
+\pdfpages@includegraphics@status=\count358
+\AM@pagebox=\box69
 \AM@global@opts=\toks36
-\AM@pagecnt=\count369
+\AM@pagecnt=\count359
 \AM@toc@title=\toks37
 \AM@lof@heading=\toks38
-\c@AM@survey=\count370
-\AM@templatesizebox=\box72
+\c@AM@survey=\count360
+\AM@templatesizebox=\box70
 ) (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/mnsymbol\MnSymbol.sty
 Package: MnSymbol 2007/01/21 v1.4 support for the MnSymbol font
 
@@ -1624,9 +1286,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `boldsf'
 LaTeX Info: Redefining \hbar on input line 50.
 )
 Package translations Info: No language package found. I am going to use `englis
-h' as default language. on input line 79.
+h' as default language. on input line 77.
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
-9.
+7.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -1637,62 +1299,62 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 (Chap-8-Futur.aux) (Bibilio.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 79.
+LaTeX Font Info:    Checking defaults for OML/jkp/m/it on input line 77.
 LaTeX Font Info:    Trying to load font information for OML+jkp on input line 7
-9.
+7.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omljkp.fd
 File: omljkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/jkp/m/n on input line 77.
 LaTeX Font Info:    Trying to load font information for OMS+jkp on input line 7
-9.
+7.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omsjkp.fd
 File: omsjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/jkp/m/n on input line 77.
 LaTeX Font Info:    Trying to load font information for OMX+jkp on input line 7
-9.
+7.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\omxjkp.fd
 File: omxjkp.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/jkpexa/m/n on input line 77.
 LaTeX Font Info:    Trying to load font information for U+jkpexa on input line 
-79.
+77.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpexa.fd
 File: ujkpexa.fd 2006/08/15 v1.0
 )
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
 
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count371
-\scratchdimen=\dimen282
-\scratchbox=\box73
-\nofMPsegments=\count372
-\nofMParguments=\count373
+\scratchcounter=\count361
+\scratchdimen=\dimen277
+\scratchbox=\box71
+\nofMPsegments=\count362
+\nofMParguments=\count363
 \everyMPshowfont=\toks39
-\MPscratchCnt=\count374
-\MPscratchDim=\dimen283
-\MPnumerator=\count375
-\makeMPintoPDFobject=\count376
+\MPscratchCnt=\count364
+\MPscratchDim=\dimen278
+\MPnumerator=\count365
+\makeMPintoPDFobject=\count366
 \everyMPtoPDFconversion=\toks40
 )
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -1711,16 +1373,16 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 79.
+or `english'. on input line 77.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 77.
  (main.out) (main.out)
-\@outlinefile=\write4
-\openout4 = `main.out'.
+\@outlinefile=\write3
+\openout3 = `main.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1757,15 +1419,15 @@ Package hyperref Info: Link coloring ON on input line 79.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 79.
-Package microtype Info: Applying patch `item' on input line 79.
-Package microtype Info: Applying patch `toc' on input line 79.
-Package microtype Info: Applying patch `eqnum' on input line 79.
+LaTeX Info: Redefining \microtypecontext on input line 77.
+Package microtype Info: Applying patch `item' on input line 77.
+Package microtype Info: Applying patch `toc' on input line 77.
+Package microtype Info: Applying patch `eqnum' on input line 77.
 
-Package microtype Warning: Unable to apply patch `footnote' on input line 79.
+Package microtype Warning: Unable to apply patch `footnote' on input line 77.
 
-Package microtype Info: Applying patch `verbatim' on input line 79.
-LaTeX Info: Redefining \microtypesetup on input line 79.
+Package microtype Info: Applying patch `verbatim' on input line 77.
+LaTeX Info: Redefining \microtypesetup on input line 77.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1779,15 +1441,6 @@ Package microtype Info: No adjustment of character kerning.
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-
-Package picture Warning: The picture package has been disabled as most
-(picture)                of its functionality is now provided by LaTeX directly
-.
-(picture)                To force the loading of the previous version use
-(picture)                `\usepackage{picture}[=v1]`
-(picture)                or `\usepackage[calc]{picture}`  on input line 79.
-
-
 (C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
 
@@ -1805,63 +1458,27 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 
 (cover.tex
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 8
+.
 
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 {\Large \bf }}\\
-                     
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 {\Large \bf }}\\
-                     
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.18 {\Large \bf }}\\
-                     
-? 
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.21 {\Large \bf }}\\
-                     
-? 
-<parullogo.png, id=183, 1172.38pt x 625.33624pt>
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
+File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `phv' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<parullogo.png, id=223, 1172.38pt x 625.33624pt>
 File: parullogo.png Graphic file (type png)
 <use parullogo.png>
-Package pdftex.def Info: parullogo.png  used on input line 34.
+Package pdftex.def Info: parullogo.png  used on input line 45.
 (pdftex.def)             Requested size: 211.01929pt x 112.55566pt.
-<Digital Use - PU NAAC Logo.jpg, id=185, 7226.5182pt x 1994.1702pt>
-File: Digital Use - PU NAAC Logo.jpg Graphic file (type jpg)
-<use Digital Use - PU NAAC Logo.jpg>
-Package pdftex.def Info: Digital Use - PU NAAC Logo.jpg  used on input line 36.
-
-(pdftex.def)             Requested size: 144.56088pt x 39.89182pt.
-) [1
+)
+[1
 
 
 {C:/Users/DAKSH/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DAKS
-H/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./parullogo.png> 
-<./Digital Use - PU NAAC Logo.jpg>]
+H/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./parullogo.png>]
 \openout2 = `Certificate.aux'.
 
  (Certificate.tex
@@ -2002,8 +1619,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [6])
-\tf@toc=\write5
-\openout5 = `main.toc'.
+\tf@toc=\write4
+\openout4 = `main.toc'.
 
 
 
@@ -2014,15 +1631,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7] (main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
+\tf@lot=\write5
+\openout5 = `main.lot'.
 
  [8
 
 
 ] (main.lof)
-\tf@lof=\write7
-\openout7 = `main.lof'.
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
  [9
 
@@ -2032,18 +1649,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (Chap-1-Intro.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
- 18.
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkptt.fd
-File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
-)
 [1
 
 
 
 
 
-])
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2052,16 +1664,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [2]
-\openout2 = `chap-2-Lit.aux'.
+<images/Top-Level System Overview of Slotify.png, id=350, 1690.315pt x 937.5025
+pt>
+File: images/Top-Level System Overview of Slotify.png Graphic file (type png)
+<use images/Top-Level System Overview of Slotify.png>
+Package pdftex.def Info: images/Top-Level System Overview of Slotify.png  used 
+on input line 43.
+(pdftex.def)             Requested size: 469.47049pt x 260.38174pt.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/10.9
+5'
+(microtype)             (new value: 10.95pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/8'
+(microtype)             (new value: 8.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/6'
+(microtype)             (new value: 6.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/10.9
+5'
+(microtype)             (new value: 10.95pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/8'
+(microtype)             (new value: 8.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/6'
+(microtype)             (new value: 6.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/10.9
+5'
+(microtype)             (new value: 10.95pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/8'
+(microtype)             (new value: 8.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/6'
+(microtype)             (new value: 6.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/10.9
+5'
+(microtype)             (new value: 10.95pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/8'
+(microtype)             (new value: 8.0pt) on input line 50.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/6'
+(microtype)             (new value: 6.0pt) on input line 50.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 50.
 
- (chap-2-Lit.tex
-Chapter 2.
-[3
+Missing character: There is no ˆ in font zptmcm7v!
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-])
+[3 <./images/Top-Level System Overview of Slotify.png (PNG copy)>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2070,10 +1723,92 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [4]
-\openout2 = `Chap-3-SRS.aux'.
+\openout2 = `chap-2-Lit.aux'.
 
- (Chap-3-SRS.tex
-Chapter 3.
+ (chap-2-Lit.tex
+Chapter 2.
+
+Overfull \hbox (58.64166pt too wide) in alignment at lines 7--12
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (58.64166pt too wide) in alignment at lines 12--17
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (58.64166pt too wide) in alignment at lines 17--19
+ [] [] [] [] 
+ []
+
+Missing character: There is no ˆ in font zptmcm7v!
+
+LaTeX Warning: Citation `kaushik2024' on page 5 undefined on input line 21.
+
+
+LaTeX Warning: Citation `attanayaka2023' on page 5 undefined on input line 23.
+
+
+LaTeX Warning: Citation `chhabra2025' on page 5 undefined on input line 25.
+
+
+LaTeX Warning: Citation `vaduka2024' on page 5 undefined on input line 27.
+
+
+LaTeX Warning: Citation `ablazov2024' on page 5 undefined on input line 29.
+
+
+LaTeX Warning: Citation `saraswathi2025' on page 5 undefined on input line 31.
+
+
+LaTeX Warning: Citation `low2025' on page 5 undefined on input line 33.
+
+
+LaTeX Warning: Citation `brilliantov2023' on page 5 undefined on input line 35.
+
+
+
+LaTeX Warning: Citation `yadav2025' on page 5 undefined on input line 37.
+
+
+LaTeX Warning: Citation `agarwal2024' on page 5 undefined on input line 39.
+
+
+LaTeX Warning: Citation `garcia2021' on page 5 undefined on input line 41.
+
+
+LaTeX Warning: Citation `schroeder2020' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Citation `rajput2025' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Citation `srinivasan2025' on page 5 undefined on input line 47.
+
+
+LaTeX Warning: Citation `jagtap2024' on page 5 undefined on input line 49.
+
+
+LaTeX Warning: Citation `shailendra2025' on page 5 undefined on input line 51.
+
+
+LaTeX Warning: Citation `shaik2025' on page 5 undefined on input line 53.
+
+
+LaTeX Warning: Citation `suganya2025' on page 5 undefined on input line 55.
+
+
+LaTeX Warning: Citation `ponnuviji2025' on page 5 undefined on input line 57.
+
+
+LaTeX Warning: Citation `pangavhane2023' on page 5 undefined on input line 59.
+
+
+Overfull \hbox (58.64166pt too wide) in alignment at lines 19--61
+ [] [] [] [] 
+ []
+
 [5
 
 
@@ -2087,7 +1822,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[6])
+[6]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2096,16 +1831,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7]
-\openout2 = `chap-4-Design.aux'.
 
- (chap-4-Design.tex
-Chapter 4.
-[8
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-
-
-
-])
+[8])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2114,18 +1847,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9]
-\openout2 = `Chap-5-Methodology.aux'.
+\openout2 = `Chap-3-SRS.aux'.
 
- (Chap-5-Methodology.tex
-Chapter 5.
-LaTeX Font Info:    Trying to load font information for OMS+jkptt on input line
- 18.
-LaTeX Font Info:    No file OMSjkptt.fd. on input line 18.
-
-LaTeX Font Warning: Font shape `OMS/jkptt/m/n' undefined
-(Font)              using `OMS/jkp/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 18.
-
+ (Chap-3-SRS.tex
+Chapter 3.
+LaTeX Font Info:    Trying to load font information for OT1+jkptt on input line
+ 7.
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ot1jkptt.fd
+File: ot1jkptt.fd 2007/01/26 Fontinst v1.928 font definitions for OT1/jkptt.
+)
 [10
 
 
@@ -2148,10 +1878,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [12]
-\openout2 = `Chap-6-imple.aux'.
+\openout2 = `chap-4-Design.aux'.
 
- (Chap-6-imple.tex
-Chapter 6.
+ (chap-4-Design.tex
+Chapter 4.
 [13
 
 
@@ -2166,11 +1896,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [14]
-\openout2 = `Chap-7-Concl.aux'.
+\openout2 = `Chap-5-Methodology.aux'.
 
- (Chap-7-Concl.tex
-Chapter 7.
+ (Chap-5-Methodology.tex
+Chapter 5.
+LaTeX Font Info:    Trying to load font information for OMS+jkptt on input line
+ 18.
+LaTeX Font Info:    No file OMSjkptt.fd. on input line 18.
+
+LaTeX Font Warning: Font shape `OMS/jkptt/m/n' undefined
+(Font)              using `OMS/jkp/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 18.
+
 [15
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[16])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[17]
+\openout2 = `Chap-6-imple.aux'.
+
+ (Chap-6-imple.tex
+Chapter 6.
+[18
 
 
 
@@ -2183,12 +1947,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[16]
+[19]
+\openout2 = `Chap-7-Concl.aux'.
+
+ (Chap-7-Concl.tex
+Chapter 7.
+[20
+
+
+
+
+])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[21]
 \openout2 = `Chap-8-Futur.aux'.
 
  (Chap-8-Futur.tex
 Chapter 8.
-) [17
+) [22
 
 
 
@@ -2196,14 +1978,14 @@ Chapter 8.
 ]
 \openout2 = `Bibilio.aux'.
 
- (Bibilio.tex) [18
+ (Bibilio.tex) [23
 
 
 
 
 ]
 
-Package caption Warning: Unused \captionsetup[sub] on input line 41.
+Package caption Warning: Unused \captionsetup[sub] on input line 40.
 See the caption package documentation for explanation.
 
 (main.aux (cover.aux) (Certificate.aux) (Ack.aux) (Abstract.aux) (toc.aux)
@@ -2218,26 +2000,30 @@ L3 programming layer <2026-08-10>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0685B71CAD5AC1FFDFE6E9AC19E3AF33;9349.
+(rerunfilecheck)             Checksum: 225151B56C147FA9CFD90CD62C09B8B9;10138.
  ) 
 Here is how much of TeX's memory you used:
- 29666 strings out of 467441
- 528530 string characters out of 5407591
- 974168 words of memory out of 5000000
- 58077 multiletter control sequences out of 15000+600000
- 680503 words of font info for 279 fonts, out of 8000000 for 9000
+ 26149 strings out of 467441
+ 459586 string characters out of 5407591
+ 884942 words of memory out of 5000000
+ 54534 multiletter control sequences out of 15000+600000
+ 700245 words of font info for 344 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,12n,83p,1003b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkps
 y.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/
-jkpttmn8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
-es/utmb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
-es/utmr8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
-es/utmri8a.pfb>
-Output written on main.pdf (27 pages, 6600250 bytes).
+jkpttmn8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/hel
+vetic/uhvb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmr8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
+times/utmri8a.pfb>
+Output written on main.pdf (32 pages, 1727998 bytes).
 PDF statistics:
- 451 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
- 70003 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 553 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 83395 words of extra memory for PDF output out of 89155 (max. 10000000)
 
