@@ -1,0 +1,70 @@
+\chapter{System Design}
+
+\section{End-to-End System Architecture}
+
+\begin{verbatim}
+Client Tier [Frontend SPA - React 18 + Vite]
+- Neo-Bauhaus High-Contrast UI
+- React Router DOM v7
+- AuthContext & Auto-Refresh Interceptor
+- Customer, Admin, and Staff Views
+
+Gateway Tier [API Gateway - Express.js on Node.js]
+- Express Engine with CORS Whitelist + Helmet + Rate Limiter
+- JWT Verify + Role Guards + IDOR Prevention
+- ReDoS-Safe Regex Sanitizer
+
+Business Logic [Controllers & Computation Engines]
+- Dynamic Slot Engine & Buffer Math
+- Appointment Lifecycle Controller
+- Revenue & Retention Aggregation
+- OAuth 2.0 & Token Issuer
+
+Storage & Cloud Tier [Data & External Providers]
+- MongoDB Atlas Database (Partial Unique Index, Aggregation)
+- Brevo v3 Transactional Email REST API
+- Cloudinary Cloud Media CDN
+- RFC-5545 iCal & Google Calendar Sync
+\end{verbatim}
+
+\section{Database Schema \& Data Model Deep Dive}
+The database architecture is designed with strict multi-tenancy. Every business entity maintains independent data while sharing a unified MongoDB Atlas cloud database.
+
+\subsection{User Model}
+\begin{itemize}
+\item \texttt{name}, \texttt{email}, \texttt{password}
+\item \texttt{role}: Enum (\texttt{customer}, \texttt{admin}, \texttt{staff})
+\item \texttt{businessId}: Nullable reference to Business
+\item \texttt{notificationPreferences} and \texttt{googleCalendarSync} configurations
+\end{itemize}
+
+\subsection{Business Model}
+\begin{itemize}
+\item \texttt{name}, \texttt{slug}, \texttt{category}, \texttt{adminId}
+\item \texttt{workingHours}: Weekly operational schedule
+\item \texttt{bookingSettings}: Custom business policies (e.g., \texttt{minAdvanceTime})
+\end{itemize}
+
+\subsection{Service \& Staff Models}
+\begin{itemize}
+\item \textbf{Service}: \texttt{duration}, \texttt{price}, \texttt{bufferTime}, \texttt{staffIds}
+\item \textbf{Staff}: \texttt{specialization}, \texttt{workingHours} (overrides business hours), \texttt{unavailableDates}
+\end{itemize}
+
+\subsection{Appointment Model}
+\begin{itemize}
+\item Immutable Fields: \texttt{priceAtBooking}, \texttt{durationAtBooking}
+\item Timestamps: \texttt{appointmentDate}, \texttt{startTime}, \texttt{endTime}, \texttt{blockedUntil}
+\item \texttt{status}: Enum (\texttt{scheduled}, \texttt{confirmed}, \texttt{completed}, \texttt{cancelled}, \texttt{no-show})
+\end{itemize}
+
+\subsection{Crucial Unique Concurrency Index}
+\begin{verbatim}
+appointmentSchema.index(
+  { businessId: 1, staffId: 1, appointmentDate: 1, startTime: 1 },
+  {
+    unique: true,
+    partialFilterExpression: { status: { $in: ["scheduled"] } },
+  }
+);
+\end{verbatim}

@@ -1,0 +1,23 @@
+\chapter{Introduction}
+
+\section{Executive Summary \& Platform Capabilities}
+
+Appointment scheduling across modern service businesses (salons, clinics, consulting firms, fitness studios) suffers from severe architectural flaws:
+
+\begin{enumerate}
+\item \textbf{Race Conditions \& Double Bookings}: When multiple users book the same specialist at the same time, naive database queries fail to prevent overlaps.
+\item \textbf{Retroactive Price Creep}: Altering a service price alters historical revenue and past booking receipts retroactively if pricing is not snapshot-isolated.
+\item \textbf{Calendar Isolation}: Lack of 2-way calendar sync causes forgotten appointments, customer no-shows, and fragmented schedules.
+\item \textbf{Unverified Reviews \& Spam}: Platforms allow anyone to post reviews, distorting business credibility.
+\end{enumerate}
+
+\textbf{Slotify} resolves all four challenges through:
+
+\begin{itemize}
+\item \textbf{Hardware-Enforced Atomic Concurrency Locks}: Leveraging MongoDB compound partial unique indexing to make double-booking physically impossible at the database engine level.
+\item \textbf{Immutable Snapshot Pricing}: Every booking permanently freezes \texttt{priceAtBooking} (Rs. INR) and \texttt{durationAtBooking}, preserving audit integrity regardless of future rate card edits.
+\item \textbf{2-Way Calendar Synchronization}: Live RFC-5545 iCalendar (\texttt{.ics}) generation for Apple/Outlook calendars and instant 1-click Google Calendar integration.
+\item \textbf{Brevo Transactional Automation}: Multi-role HTML email pipelines for confirmation, 24-hour reminders, 2-hour reminders, cancellation, rescheduling, and post-session review invitations.
+\item \textbf{Verified Customer Scorecards}: Only customers who completed a verified appointment can submit 1–5 star reviews and feedback for both the business and individual specialists.
+\item \textbf{Multi-Tenant Architecture with Walk-In Mode}: Isolated portals for Customers, Business Owners (Admins), and Staff Specialists, complemented by a rapid Walk-In (POS) interface for reception desks.
+\end{itemize}

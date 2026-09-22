@@ -1,0 +1,43 @@
+\chapter{Implementation and Configuration}
+
+\section{Backend File-by-File Technical Breakdown}
+\begin{itemize}
+\item \textbf{server.js}: Entrypoint for the backend daemon. Connects to MongoDB, configures CORS, initializes Passport.
+\item \textbf{Controllers}: Contains \texttt{authController.js}, \texttt{appointmentController.js}, \texttt{analyticsController.js}, etc.
+\item \textbf{Middleware}: \texttt{auth.js} (JWT verification, RBAC), \texttt{errorHandler.js} (Centralized errors), \texttt{validateBusinessAccess.js} (IDOR prevention).
+\item \textbf{Models}: Mongoose schemas (\texttt{User.js}, \texttt{Business.js}, \texttt{Appointment.js}, etc.).
+\item \textbf{Utils}: \texttt{availabilityCalculator.js} (Dynamic slot algorithm), \texttt{emailService.js} (Brevo integration).
+\end{itemize}
+
+\section{Frontend Architecture \& State Management}
+Constructed using \textbf{React 18.2} and bundled via \textbf{Vite 7}. Adheres to a strict \textbf{Neo-Bauhaus design system}.
+
+\subsection{Authentication \& Token Refresh Flow}
+\begin{enumerate}
+\item \textbf{App Mount}: Validates \texttt{accessToken} via \texttt{GET /api/auth/me}.
+\item \textbf{Axios Interceptor}: Attaches \texttt{Bearer} tokens to outgoing requests.
+\item \textbf{Transparent 401 Refresh}: If a request fails with 401, issues a silent \texttt{POST /api/auth/refresh-token} with HTTP-only cookies and replays the original request.
+\end{enumerate}
+
+\section{Security, Performance \& Error Handling Matrix}
+\begin{itemize}
+\item \textbf{ReDoS Protection}: Search inputs pass through regex sanitization neutralizing catastrophic backtracking.
+\item \textbf{Strict CORS Whitelist}: Production requests are verified against authorized origins.
+\item \textbf{IDOR Prevention}: Cross-tenant data leakage is prevented via business ID validation.
+\item \textbf{Password Protection}: Bcrypt salted hashing with 10 rounds.
+\end{itemize}
+
+\section{Local Setup, Environment Variables \& Deployment}
+\begin{verbatim}
+Backend Configuration (.env):
+PORT=5000
+MONGODB_URI=...
+JWT_SECRET=...
+BREVO_API_KEY=...
+CLOUDINARY_API_KEY=...
+
+Deployment:
+- Frontend: Vercel (SPA rewrite rules)
+- Backend: Render (Node web service)
+- Database: MongoDB Atlas (Cloud M0/M10 replica set)
+\end{verbatim}

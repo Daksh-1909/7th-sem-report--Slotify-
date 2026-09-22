@@ -1,0 +1,60 @@
+\chapter{Core Logic \& Mechanics}
+
+\section{How the Database Works with the Backend}
+
+The interaction between the Express backend and MongoDB Atlas is architected around \textbf{safe connection pooling}, \textbf{atomic writes}, \textbf{defense against race conditions}, and \textbf{immutable historical records}.
+
+\subsection{Connection Pooling \& Event Lifecycle}
+Mongoose initializes a managed TCP connection pool:
+\begin{itemize}
+\item \texttt{maxPoolSize: 10}: Limits concurrent sockets to avoid exhausting MongoDB Atlas M0/M10 thread thresholds.
+\item \texttt{serverSelectionTimeoutMS: 5000}: Fails quickly during network partitioning.
+\item \texttt{socketTimeoutMS: 45000}: Prevents hanging sockets from blocking Express worker threads.
+\end{itemize}
+
+\subsection{The Concurrency Problem \& The Hardware-Enforced Solution}
+Slotify solves this via \textbf{Database-Level Partial Unique Constraints}:
+\begin{itemize}
+\item The partial filter expression \texttt{\{ status: \{ \$in: ["scheduled"] \} \}} ensures that only active scheduled bookings occupy the unique index bucket.
+\item When multiple users hit the server at the exact same millisecond, MongoDB's internal B-tree lock allows only one write to commit.
+\item The second write throws an atomic database exception: \texttt{MongoServerError: E11000 duplicate key error}.
+\item The centralized error handler inspects the error and rejects the subsequent requests with a \texttt{409 Conflict} response.
+\end{itemize}
+
+\subsection{Immutable Snapshot Pricing}
+To guarantee financial and historical accuracy:
+\begin{itemize}
+\item When an appointment is created, it snapshots \texttt{priceAtBooking} and \texttt{durationAtBooking}.
+\item Analytics aggregation pipelines group and sum \texttt{\$priceAtBooking}. Audit trails, receipts, and business payouts remain historically true regardless of future rate card edits.
+\end{itemize}
+
+\section{Dynamic Slot Engine \& Concurrency Control}
+The availability engine runs in real-time when clients view the booking calendar.
+
+\subsection{Slot States Explained}
+\begin{enumerate}
+\item \textbf{available}: Open for booking.
+\item \textbf{booked}: An active appointment occupies this time window.
+\item \textbf{too-soon}: Slot start time violates \texttt{minAdvanceTime}.
+\item \textbf{too-far}: Date exceeds \texttt{maxAdvanceTime}.
+\item \textbf{past}: The time has already passed.
+\end{enumerate}
+
+\subsection{Dynamic Slot Calculation Algorithm}
+\begin{verbatim}
+1. Load working hours for targetDate and timezone.
+2. If date is a holiday or business is closed, return empty set.
+3. For each eligible staff member:
+   a. Check staff leave records and blackout dates.
+   b. Build candidate intervals from shift boundaries.
+   c. Exclude intervals overlapping breaks.
+   d. For each interval, calculate state (booked, available, too-soon, etc.).
+4. Merge state results, sort, and return deduplicated slots.
+\end{verbatim}
+
+\section{Email Engine, iCalendar \& Notification Systems}
+\begin{itemize}
+\item \textbf{Brevo Transactional Email Engine}: Dispatches multi-role HTML emails for confirmations, reminders, cancellations, and reviews.
+\item \textbf{RFC-5545 iCalendar (.ics)}: Automatic generation of \texttt{.ics} files containing \texttt{METHOD:REQUEST} to sync with Apple/Outlook calendars.
+\item \textbf{Google Calendar 1-Click}: Direct deep links generated on the frontend for instant Google Calendar integration.
+\end{itemize}

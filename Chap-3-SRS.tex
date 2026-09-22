@@ -1,0 +1,81 @@
+\chapter{Software Requirements Specification}
+
+\section{End-to-End User Journeys \& Workflows}
+
+\subsection{Journey 1: Customer Online Booking}
+\begin{enumerate}
+\item \textbf{Discovery}: Customer navigates to \texttt{/search} or \texttt{/business/:slug}.
+\item \textbf{Service Selection}: Customer clicks "Book" on "Haircut \& Styling" (Rs. 800, 45 mins).
+\item \textbf{Staff Selection}: Customer chooses "Daksh Patel (Master Stylist)" or selects "Any Available".
+\item \textbf{Calendar Date}: Customer picks an upcoming Friday.
+\item \textbf{Slot Generation}: Frontend fetches \texttt{GET /api/appointments/slots}. The slot engine calculates all available 45-minute windows taking into account Daksh's shifts, lunch breaks, and existing bookings.
+\item \textbf{Booking Confirmation}: Customer selects 11:15 AM, enters special notes, and clicks "Confirm Booking".
+\item \textbf{Atomic Creation}:
+   \begin{itemize}
+   \item Backend verifies slot validity, locks the unique index entry, snapshots \texttt{priceAtBooking: 800} and \texttt{durationAtBooking: 45}.
+   \item Generates an in-app notification.
+   \item Dispatches a Brevo confirmation email containing an attached \texttt{invite.ics} calendar file.
+   \item Redirects customer to confirmation screen displaying a 1-click Google Calendar sync button.
+   \end{itemize}
+\end{enumerate}
+
+\subsection{Journey 2: Specialist Service Execution}
+\begin{enumerate}
+\item Specialist logs into \texttt{/staff} portal and views today's chronological agenda.
+\item Customer arrives on premises at 11:10 AM. Specialist clicks \textbf{"Check-In"}. Status transitions from \texttt{scheduled} to \texttt{confirmed}.
+\item Service completes at 11:55 AM. Specialist clicks \textbf{"Complete Appointment"}.
+\item Status transitions to \texttt{completed}. The business's total completed appointment counter increments.
+\item Brevo automatically dispatches a "Session Completed" email to the customer with an invitation to leave feedback.
+\end{enumerate}
+
+\subsection{Journey 3: Verified Review Scorecard}
+\begin{enumerate}
+\item Customer logs in and opens \texttt{/my-appointments} or clicks the link in their post-session email.
+\item A \textbf{"Write Review"} button is active exclusively for this completed appointment.
+\item Customer awards 5 stars and writes feedback.
+\item Backend verifies that:
+   \begin{itemize}
+   \item Appointment status is \texttt{'completed'}.
+   \item Requesting user matches \texttt{appointment.customerId}.
+   \item No review exists yet for this \texttt{appointmentId}.
+   \end{itemize}
+\item Review is saved. The business's \texttt{averageRating} and \texttt{totalReviews} are recalculated, and the review appears dynamically on the public storefront.
+\end{enumerate}
+
+\subsection{Journey 4: Front-Desk Walk-In (POS Mode)}
+\begin{enumerate}
+\item An unregistered walk-in customer walks into a medical clinic.
+\item Receptionist opens \texttt{/admin} dashboard and clicks \textbf{"+ New Walk-In"}.
+\item Receptionist selects the service, assigns an available doctor, enters the customer's name and phone number.
+\item Backend creates an appointment with \texttt{isWalkIn: true} and \texttt{customerId: null}.
+\item The doctor's schedule immediately blocks out the slot, preventing online clients from double-booking.
+\end{enumerate}
+
+\section{Complete REST API Specification}
+\begin{verbatim}
+Authentication (/api/auth)
+- POST /api/auth/register : Registers a new account.
+- POST /api/auth/login : Authenticates credentials.
+- GET  /api/auth/me : Retrieves the profile of the current user.
+- POST /api/auth/refresh-token : Issues a new access token.
+
+Appointments (/api/appointments)
+- GET  /api/appointments/slots : Computes available time slots.
+- POST /api/appointments : Creates a new appointment with atomic lock.
+- POST /api/appointments/walk-in : Creates a walk-in appointment.
+- PATCH /api/appointments/:id/reschedule : Reschedules an appointment.
+- PATCH /api/appointments/:id/cancel : Cancels an appointment.
+
+Businesses & Discovery (/api/business)
+- GET  /api/business/:slug : Fetches public storefront.
+- PUT  /api/business/settings : Updates operating hours and policies.
+- GET  /api/search?q=... : ReDoS-safe search.
+
+Services (/api/services)
+- GET  /api/services/business/:businessId : Fetches all active services.
+- POST /api/services : Creates a new catalog service.
+
+Reviews & Analytics
+- POST /api/reviews : Submits a star rating and comment.
+- GET  /api/analytics/overview : Revenue totals and booking counts.
+\end{verbatim}
