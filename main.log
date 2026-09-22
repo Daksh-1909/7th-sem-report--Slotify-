@@ -1,7 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  22 SEP 2026 20:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  22 SEP 2026 20:31
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
 **./main.tex
 (main.tex
@@ -1803,26 +1802,204 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 
 (cover.tex
+<parullogo.png, id=3, 1172.38pt x 625.33624pt>
+File: parullogo.png Graphic file (type png)
+<use parullogo.png>
+Package pdftex.def Info: parullogo.png  used on input line 50.
+(pdftex.def)             Requested size: 211.01929pt x 112.55566pt.
+<Digital Use - PU NAAC Logo.jpg, id=5, 7226.5182pt x 1994.1702pt>
+File: Digital Use - PU NAAC Logo.jpg Graphic file (type jpg)
+<use Digital Use - PU NAAC Logo.jpg>
+Package pdftex.def Info: Digital Use - PU NAAC Logo.jpg  used on input line 52.
 
-cover.tex:12: LaTeX Error: There's no line here to end.
+(pdftex.def)             Requested size: 144.56088pt x 39.89182pt.
+) [1
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 {\Large \bf }}\\
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+
+{C:/Users/DAKSH/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DAKS
+H/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./parullogo.png> 
+<./Digital Use - PU NAAC Logo.jpg>]
+\openout2 = `Certificate.aux'.
+
+ (Certificate.tex
+File: parullogo.png Graphic file (type png)
+<use parullogo.png>
+Package pdftex.def Info: parullogo.png  used on input line 6.
+(pdftex.def)             Requested size: 175.84941pt x 93.79639pt.
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
+ 16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for U+jkpsya on input line 
+16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsya.fd
+File: ujkpsya.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+jkpsyb on input line 
+16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyb.fd
+File: ujkpsyb.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+jkpmia on input line 
+16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpmia.fd
+File: ujkpmia.fd 2006/08/15 v1.0
+)
+LaTeX Font Info:    Trying to load font information for U+jkpsyc on input line 
+16.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/kpfonts\ujkpsyc.fd
+File: ujkpsyc.fd 2006/08/15 v1.0
+)
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/12'
+(microtype)             (new value: 12.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolA/m/n/7'
+(microtype)             (new value: 7.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/12'
+(microtype)             (new value: 12.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolB/m/n/7'
+(microtype)             (new value: 7.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/12'
+(microtype)             (new value: 12.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolC/m/n/7'
+(microtype)             (new value: 7.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/12'
+(microtype)             (new value: 12.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/9'
+(microtype)             (new value: 9.0pt) on input line 16.
+Package microtype Info: Fixing zero \fontdimen 6 for font `U/MnSymbolD/m/n/7'
+(microtype)             (new value: 7.0pt) on input line 16.
+LaTeX Font Info:    Trying to load font information for U+wasy on input line 16
+.
+
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/wasysym\uwasy.fd
+File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 16.
+
+Missing character: There is no ˆ in font zptmcm7v!
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
+9.
+(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+))
+[2
+
+
+
+]
+\openout2 = `Ack.aux'.
+
+ (Ack.tex) [3
+
+
+
+
+]
+\openout2 = `Abstract.aux'.
+
+ (Abstract.tex) [4
+
+
+
+
+]
+\openout2 = `toc.aux'.
+
+ (toc.tex (main.toc [5
+
+
+
+
+
+]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[6])
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[7] (main.lot)
+\tf@lot=\write6
+\openout6 = `main.lot'.
+
+ [8
+
+
+] (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [9
+
+
+])
+! Missing \endcsname inserted.
+<to be read again> 
+                   \protect 
+l.92 \pagestyle{\chaptermark}
+                             {\markboth{\chaptername \\thechapter \ -\ #1}{}}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
 
  
 Here is how much of TeX's memory you used:
- 28419 strings out of 467441
- 504030 string characters out of 5407591
- 953216 words of memory out of 5000000
- 57379 multiletter control sequences out of 15000+600000
- 632619 words of font info for 58 fonts, out of 8000000 for 9000
+ 29077 strings out of 467441
+ 515951 string characters out of 5407591
+ 965216 words of memory out of 5000000
+ 57756 multiletter control sequences out of 15000+600000
+ 673202 words of font info for 197 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,2n,83p,1003b,263s stack positions out of 10000i,1000n,20000p,200000b,200000s
-cover.tex:12:  ==> Fatal error occurred, no output PDF file produced!
+ 74i,12n,83p,1003b,680s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
