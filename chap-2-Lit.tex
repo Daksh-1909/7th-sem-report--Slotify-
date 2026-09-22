@@ -1,90 +1,46 @@
 \chapter{Literature Survey}
 \section{Practical}
+Appointment scheduling is a critical part of service-based businesses, and many existing systems focus on automating booking while improving customer convenience. Popular platforms such as Calendly, Acuity Scheduling, Setmore, and Google Calendar are widely used for appointment management, but they are often designed for general-purpose scheduling rather than for local service businesses with complex staff availability, walk-in customers, and multi-service operations.
+
+A common limitation in many existing solutions is that they do not fully support the operational needs of small service providers. For example, a salon, clinic, or wellness centre may require a system that handles multiple staff members, multiple service durations, customer reminders, and real-time slot availability. Some tools provide basic scheduling but do not prevent double booking effectively at the database level. Others allow bookings but lack a proper business owner dashboard, strong analytics, or business-specific workflow management.
+
+Several well-known appointment systems offer online booking and reminder features, but they often focus on simplicity and general usage rather than multi-tenant business management. Local businesses also face challenges such as no-shows, dead slots, manual rescheduling, and poor visibility into repeat trends. This makes appointment booking a problem not only of convenience but also of operational efficiency and revenue management.
+
+The literature around scheduling systems and business operations highlights the importance of real-time coordination, automated communication, and reliable data handling. In service-based organizations, poor scheduling creates delays, lost revenue, and customer dissatisfaction. Therefore, a robust scheduling system must provide both customer convenience and business-side control.
 
 \section{Summary of Literature Survey}
-Table~\ref{tab:litreview} summarizes all twenty reviewed papers along with their key contributions and limitations.
+Table~\ref{tab:litreview} summarizes the major insights from the appointment and scheduling domain and shows the gap that Slotify aims to address.
 
 \begin{longtable}{|p{0.5cm}|p{3.2cm}|p{4.8cm}|p{4.8cm}|}
 \caption{Summary of Literature Survey} \label{tab:litreview} \\
 \hline
-\textbf{Sr.} & \textbf{Author (Year)} & \textbf{Key Contribution} & \textbf{Limitation} \\
+\textbf{Sr.} & \textbf{System / Study} & \textbf{Key Contribution} & \textbf{Limitation} \\
 \hline
 \endfirsthead
 \multicolumn{4}{c}{\tablename\ \thetable{} -- \textit{Continued}} \\
 \hline
-\textbf{Sr.} & \textbf{Author (Year)} & \textbf{Key Contribution} & \textbf{Limitation} \\
+\textbf{Sr.} & \textbf{System / Study} & \textbf{Key Contribution} & \textbf{Limitation} \\
 \hline
 \endhead
 \hline
 \endfoot
 
-1 & Kaushik (2024)\cite{kaushik2024} & ML expense prediction using Linear Regression, Decision Tree, Random Forest & No personalized health recommendations \\ \hline
+1 & Calendly & Simple online appointment scheduling for customers and professionals & Limited custom workflows for multi-service small businesses \\ \hline
 
-2 & Attanayaka (2023)\cite{attanayaka2023}  & Simplified personal finance management app & No predictive models or spending classification \\ \hline
+2 & Acuity Scheduling & Streamlined booking with service-based time slots & Less focus on local business dashboards and staff analytics \\ \hline
 
-3 & Chhabra (2025) \cite{chhabra2025}  & Cloud-based AI for budgeting and investment planning & Lacks deep individual financial analysis \\ \hline
+3 & Setmore & Appointment booking with basic reminders and calendar integration & May not fully address real-time conflict prevention and multi-tenant operations \\ \hline
 
-4 & Vaduka (2024)\cite{vaduka2024}  & AI decision support for budgeting and investing & Limited AI advisory in personal finance apps \\ \hline
+4 & Google Calendar & Shared calendar-based scheduling and collaboration & Not optimized for direct business appointment management and customer booking flows \\ \hline
 
-5 & Ablazov (2024)\cite{ablazov2024}  & Robo-Advisor for investment and risk management & Insufficient work on user trust and adoption \\ \hline
+5 & Traditional Manual Scheduling & Phone-based booking and paper records & High chance of double booking, missed reminders, and poor data visibility \\ \hline
 
-6 & Saraswathi (2025)\cite{saraswathi2025}  & Smart investment strategy advisor & Cannot handle personal/emotional situations \\ \hline
-
-7 & Low (2025)\cite{low2025} & Android app for expense categorization and goal tracking & Complex for non-technical beginners \\ \hline
-
-8 & Brilliantov \& Mandrikova (2023)\cite{brilliantov2023}  & AI-based financial health analysis and budgeting & Needs more validation of AI advice \\ \hline
-
-9 & Yadav (2025)\cite{yadav2025}  & AI + LLM financial literacy platform with OCR & LLM advice effectiveness not validated \\ \hline
-
-10 & Agarwal \& Varghese (2024)\cite{agarwal2024}  & AI finance assistant with budgeting and alerts & Privacy, trust, and demographic issues \\ \hline
-
-11 & Garcia \& Claour (2021)\cite{garcia2021}  & Mobile app with OCR receipt scanning for cash flow tracking & No ML, no predictive forecasting \\ \hline
-
-12 & Schroeder et al. (2020)\cite{schroeder2020}  & ML architecture for robo-advisory in stock and crypto markets & No expense tracking or personal budgeting \\ \hline
-
-13 & Rajput et al. (2025)\cite{rajput2025} & AI-driven ML for personal budget planning and forecasting & Gap in real-time + tailored advisory \\ \hline
-
-14 & Srinivasan et al. (2025)\cite{srinivasan2025}  & Hybrid XGBoost + Random Forest budget forecasting (RMSE 7.8) & No real-time integration or personalized advice \\ \hline
-
-15 & Jagtap et al. (2024)\cite{jagtap2024}  & Decision Tree + Neural Network expense categorization & No predictive analytics or recommendations \\ \hline
-
-16 & Shailendra et al. (2025)\cite{shailendra2025}  & ML platform with multilingual support and data encryption & No real-time data or context-aware advisory \\ \hline
-
-17 & Shaik et al. (2025)\cite{shaik2025}  & ML-based automatic expense categorization system & Gap in real-time adoption in mainstream apps \\ \hline
-
-18 & Suganya et al. (2025)\cite{suganya2025} & GenAI finance consultant using Llama 3.1 + Random Forest + GAN & Needs real-world validation across demographics \\ \hline
-
-19 & Ponnuviji et al. (2025)\cite{ponnuviji2025}  & Review of ML, NLP, predictive analytics in finance apps & No unified budgeting + investment + literacy platform \\ \hline
-
-20 & Pangavhane et al. (2023)\cite{pangavhane2023}  & AI finance advisor with risk assessment and portfolio optimization & Lacks real-time advisory for combined finance tasks \\ \hline
+6 & Modern Digital Booking Platforms & Automates booking and communication workflows & Often lack deep business intelligence, role-based access, and local business personalization \\ \hline
 
 \end{longtable}
 
-Based on the literature review, it is evident that while many systems address expense tracking and prediction, there is a clear gap in providing integrated intelligent advisory, real-time over-limit alerts, spending behavior classification, and personalized recommendations within a single platform. The proposed FinanceAI system is specifically designed to address all these gaps.
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
+The review shows that while common scheduling tools provide convenience, they do not fully address the operational constraints of local service businesses. In particular, small businesses need a platform that combines booking, scheduling conflict prevention, notifications, staff coordination, and analytics in one system. Slotify is designed to fill this gap by offering a smart appointment booking experience tailored for service-based businesses.
 
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
-\section{hello}
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
+The platform goes beyond basic scheduling by including business-specific functionality such as staff management, service availability, appointment reminders, and reliable data handling. These features directly address the practical limitations of traditional booking methods and general-purpose scheduling tools.
 
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
-\section{hello}
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
-
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
-\section{hello}
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
-
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
-\section{hello}
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
-
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
-\section{hello}
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
-
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
-\section{hello}
-Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
-
-Once you're familiar with the editor, you can find various project settings in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
+Therefore, the literature review indicates that there is a clear need for a specialized appointment booking system that is scalable, easy to use, and focused on the realities of service businesses. Slotify is positioned as such a solution by combining practical business workflows with automated, real-time appointment management.
