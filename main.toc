@@ -1,8 +1,8 @@
 \acswitchoff 
 \contentsline {chapter}{Acknowledgements}{iii}{section*.3}%
 \contentsline {chapter}{Abstract}{iv}{section*.4}%
-\contentsline {chapter}{List of Tables}{vi}{section*.7}%
-\contentsline {chapter}{List of Figures}{vii}{section*.9}%
+\contentsline {chapter}{List of Tables}{viii}{section*.7}%
+\contentsline {chapter}{List of Figures}{ix}{section*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Executive Summary \& Platform Capabilities}{1}{section.1.1}%
 \contentsline {chapter}{\numberline {2}Literature Review \& Technology Stack}{3}{chapter.2}%
