@@ -1,25 +1,33 @@
 \chapter{Conclusion}
 
-The Slotify platform successfully addresses the core challenges in modern appointment scheduling. By implementing a hardware-enforced concurrency lock at the database layer, we have completely eliminated the risk of double bookings. The immutable snapshot pricing architecture ensures that all financial and historical records remain accurate and immune to retroactive changes. Furthermore, the two-way calendar synchronization and verified review systems greatly improve the overall customer experience, while providing business owners with reliable management tools. 
+\section{Summary of Work Done}
+The Slotify project was developed to solve the recurring scheduling and coordination issues faced by service-based businesses. The platform brings together appointment booking, staff management, business scheduling, customer communication, and review handling into a unified system. By addressing the common problems of missed appointments, manual coordination, and scheduling conflicts, the project demonstrates a practical solution for modern service businesses.
 
-Slotify stands as an enterprise-grade, multi-tenant solution that seamlessly balances complex backend logic with an intuitive Neo-Bauhaus user interface.
+\section{Objectives Met}
+The project successfully met its major objectives by enabling customers to search for services and book appointments online, helping businesses manage staff and working schedules, and supporting automated reminders to improve booking reliability. It also introduced role-based access and a structured application flow that makes the system suitable for real operational use.
 
-\section{Academic Citation \& Institutional Affiliations}
+\begin{table}[h]
+\centering
+\caption{Objective completion status}
+\begin{tabular}{|p{1cm}|p{8cm}|p{3cm}|}
+\hline
+\textbf{No.} & \textbf{Objective} & \textbf{Status} \\
+\hline
+1 & Customer-facing booking with real-time slot display & Completed \\
+\hline
+2 & Provider dashboard with schedule management and double-booking prevention & Completed \\
+\hline
+3 & Automated email confirmation and 24-hour reminder & Completed \\
+\hline
+4 & Calendar synchronisation and cloud deployment & Partial / Completed \\
+\hline
+5 & Business analytics module & Partially done \\
+\hline
+\end{tabular}
+\end{table}
 
-Slotify was conceptualized, designed, and engineered as the \textbf{Final Year Major Capstone Project} by project group \textbf{CSE\_182} at \textbf{Parul University}.
+\section{Challenges Encountered}
+Several technical and practical challenges were encountered during development, especially in the areas of slot validation, concurrency handling, and user-role management. Synchronizing booking data across multiple users while maintaining consistency was one of the most significant technical challenges. In addition, the system had to balance usability and complexity so that it remained understandable for business users while supporting backend reliability.
 
-\subsection{Research Publication}
-\begin{itemize}
-\item \textbf{Paper Title}: \textit{Multi-Tenant Appointment Booking \& Real-Time Scheduling Architecture with Concurrency Lock \& Snapshot Pricing}
-\item \textbf{Team / Group Code}: \textbf{CSE\_182}
-\item \textbf{Affiliation}: Department of Computer Science \& Engineering, Faculty of Engineering \& Technology (PIET), \textbf{Parul University}, Vadodara, Gujarat, India.
-\item \textbf{Academic Batch}: 2022 -- 2026 | \textbf{Program}: Bachelor of Technology (B.Tech) in Computer Science \& Engineering.
-\end{itemize}
-
-\subsection{Project Team \& Authors}
-\begin{itemize}
-\item \textbf{Aksh Thakkar} — Founder, Product Vision \& Full-Stack System Architecture
-\item \textbf{Om Maurya} — Frontend Lead \& UI/UX Specialist
-\item \textbf{Daksh Patel} — Backend \& Systems Engineer
-\item \textbf{Jainil Patel} — Database \& Concurrency Engineer
-\end{itemize}
+\section{Key Takeaways}
+The project highlighted the importance of designing scheduling systems around real business problems rather than generic software features. A strong appointment system must balance customer convenience, business efficiency, and technical reliability. Slotify demonstrates that this balance is achievable through careful design, modular development, and strong validation of booking logic.

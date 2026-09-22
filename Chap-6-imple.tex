@@ -1,43 +1,97 @@
-\chapter{Implementation and Configuration}
+\chapter{Implementation}
 
-\section{Backend File-by-File Technical Breakdown}
-\begin{itemize}
-\item \textbf{server.js}: Entrypoint for the backend daemon. Connects to MongoDB, configures CORS, initializes Passport.
-\item \textbf{Controllers}: Contains \texttt{authController.js}, \texttt{appointmentController.js}, \texttt{analyticsController.js}, etc.
-\item \textbf{Middleware}: \texttt{auth.js} (JWT verification, RBAC), \texttt{errorHandler.js} (Centralized errors), \texttt{validateBusinessAccess.js} (IDOR prevention).
-\item \textbf{Models}: Mongoose schemas (\texttt{User.js}, \texttt{Business.js}, \texttt{Appointment.js}, etc.).
-\item \textbf{Utils}: \texttt{availabilityCalculator.js} (Dynamic slot algorithm), \texttt{emailService.js} (Brevo integration).
-\end{itemize}
+\section{Backend Implementation}
+The backend of Slotify is built using Node.js and Express.js. It manages authentication, appointment processing, service queries, and business logic. A structured routing and controller pattern is used to keep the application organized and easier to maintain as the project grows.
 
-\section{Frontend Architecture \& State Management}
-Constructed using \textbf{React 18.2} and bundled via \textbf{Vite 7}. Adheres to a strict \textbf{Neo-Bauhaus design system}.
+\subsection{Project Structure}
+The backend project is organized into modular folders such as controllers, models, middleware, routes, and utilities. This separation allows the system to manage business logic, validation, and database access more efficiently. A clear project structure is essential in a platform that supports multiple user roles and different services.
 
-\subsection{Authentication \& Token Refresh Flow}
-\begin{enumerate}
-\item \textbf{App Mount}: Validates \texttt{accessToken} via \texttt{GET /api/auth/me}.
-\item \textbf{Axios Interceptor}: Attaches \texttt{Bearer} tokens to outgoing requests.
-\item \textbf{Transparent 401 Refresh}: If a request fails with 401, issues a silent \texttt{POST /api/auth/refresh-token} with HTTP-only cookies and replays the original request.
-\end{enumerate}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/business setup.png}
+\caption{Business configuration and setup screen}
+\end{figure}
 
-\section{Security, Performance \& Error Handling Matrix}
-\begin{itemize}
-\item \textbf{ReDoS Protection}: Search inputs pass through regex sanitization neutralizing catastrophic backtracking.
-\item \textbf{Strict CORS Whitelist}: Production requests are verified against authorized origins.
-\item \textbf{IDOR Prevention}: Cross-tenant data leakage is prevented via business ID validation.
-\item \textbf{Password Protection}: Bcrypt salted hashing with 10 rounds.
-\end{itemize}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/business.png}
+\caption{Business profile and service discovery interface}
+\end{figure}
 
-\section{Local Setup, Environment Variables \& Deployment}
-\begin{verbatim}
-Backend Configuration (.env):
-PORT=5000
-MONGODB_URI=...
-JWT_SECRET=...
-BREVO_API_KEY=...
-CLOUDINARY_API_KEY=...
+\subsection{Slot Availability Logic}
+The slot availability engine checks for business working hours, staff schedules, and existing bookings before rendering available times. It uses rules such as service duration, business policies, and staff availability to determine valid appointment windows. This logic prevents conflicts and maintains the reliability of the booking system.
 
-Deployment:
-- Frontend: Vercel (SPA rewrite rules)
-- Backend: Render (Node web service)
-- Database: MongoDB Atlas (Cloud M0/M10 replica set)
-\end{verbatim}
+\subsection{Authentication Middleware}
+Authentication middleware verifies user identity before allowing protected API access. It ensures that users are logged in and that only authorized users can view or modify relevant business data. This is important for preventing unauthorized actions and enforcing role-based access.
+
+\subsection{Email Notification Service}
+The system includes an email notification service to send confirmation messages and reminders to customers. These notifications help reduce missed appointments and improve communication between the business and the customer. The service is integrated into the booking and reminder flow to keep the scheduling process reliable.
+
+\section{Frontend Implementation}
+The frontend is built using React, which provides a responsive and interactive interface for customers, admins, and staff. It is designed to present a clear booking flow, show available time slots, and manage user actions across different roles.
+
+\subsection{Project Structure}
+The frontend is organized into reusable components, pages, routes, and context-based state management. This structure improves maintainability and allows the UI to scale as the platform evolves. It also keeps the login, dashboard, and business booking flows separated into well-defined modules.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/landing page.png}
+\caption{Landing page of the Slotify platform}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{images/login page.png}
+\caption{Login interface for the user authentication flow}
+\end{figure}
+
+\subsection{Real-Time Slot Display}
+The booking interface updates available time slots dynamically based on current data and business rules. Customers can see only valid appointment times, which improves the user experience and prevents the confusion associated with manual scheduling. The real-time slot display is a core part of the platform's operational value.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{images/dashboard.png}
+\caption{Admin dashboard showing bookings, activities, and business overview}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{images/appoinments.png}
+\caption{Appointment list and scheduling records}
+\end{figure}
+
+\subsection{State Management and Prop Drilling Refactor}
+As the application grew, state management became more complex. The project addressed this by reducing unnecessary prop drilling and centralizing shared state where necessary. This made the application more maintainable and improved the consistency of booking, authentication, and dashboard data across components.
+
+\section{Implementation Status}
+The application has implemented the core features needed for a functional booking system, including user authentication, business discovery, service booking, reminders, and scheduling logic. The project is now in a working state and demonstrates the viability of the solution for small service-based businesses. Further enhancements such as payments, AI recommendation, and mobile support can be added as future extensions.
+
+\begin{table}[h]
+\centering
+\caption{Feature implementation status}
+\begin{tabular}{|p{6cm}|p{3cm}|p{3cm}|}
+\hline
+\textbf{Feature} & \textbf{Status} & \textbf{Phase} \\
+\hline
+User registration and login & Done & Semester 6 \\
+\hline
+Real-time slot booking & Done & Semester 6 \\
+\hline
+Email confirmation and reminder & Done & Semester 6 \\
+\hline
+Provider dashboard and schedule & Done & Semester 6 \\
+\hline
+Business analytics & Partial & Semester 6 \\
+\hline
+Calendar synchronisation & In progress & Semester 6/7 \\
+\hline
+Payment integration, mobile app, and AI recommendations & Deferred & Semester 7 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.85\textwidth]{images/appoinment lifecycle.png}
+\caption{Appointment lifecycle flow from booking to service completion}
+\end{figure}

@@ -1,70 +1,83 @@
 \chapter{System Design}
 
-\section{End-to-End System Architecture}
+\section{Architecture Overview}
+The architecture of Slotify is designed as a modular, multi-tier system that separates the user interface, application logic, and underlying data management. The frontend is responsible for user interaction, while the backend handles business logic, validation, notifications, and access control. A database layer stores all business, appointment, and user information in a structured and secure manner.
 
-\begin{verbatim}
-Client Tier [Frontend SPA - React 18 + Vite]
-- Neo-Bauhaus High-Contrast UI
-- React Router DOM v7
-- AuthContext & Auto-Refresh Interceptor
-- Customer, Admin, and Staff Views
+The design follows a multitiered approach so each component can be developed, maintained, and scaled independently. This structure also supports future extension, such as additional business modules or external integrations.
 
-Gateway Tier [API Gateway - Express.js on Node.js]
-- Express Engine with CORS Whitelist + Helmet + Rate Limiter
-- JWT Verify + Role Guards + IDOR Prevention
-- ReDoS-Safe Regex Sanitizer
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure 4-1.jpeg}
+\caption{System architecture of the Slotify booking platform}
+\end{figure}
 
-Business Logic [Controllers & Computation Engines]
-- Dynamic Slot Engine & Buffer Math
-- Appointment Lifecycle Controller
-- Revenue & Retention Aggregation
-- OAuth 2.0 & Token Issuer
+\section{Database Design}
+The database is designed to support multiple businesses, users, appointments, services, and staff records while maintaining data integrity. Business data is stored separately for each tenant, and appointment records are connected to the relevant business and staff member. This approach ensures that scheduling operations are isolated and accurate.
 
-Storage & Cloud Tier [Data & External Providers]
-- MongoDB Atlas Database (Partial Unique Index, Aggregation)
-- Brevo v3 Transactional Email REST API
-- Cloudinary Cloud Media CDN
-- RFC-5545 iCal & Google Calendar Sync
-\end{verbatim}
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure 4-2.png}
+\caption{Database model and relationship flow for business, staff, and appointments}
+\end{figure}
 
-\section{Database Schema \& Data Model Deep Dive}
-The database architecture is designed with strict multi-tenancy. Every business entity maintains independent data while sharing a unified MongoDB Atlas cloud database.
+Key entities include users, businesses, services, staff, appointments, reviews, and notifications. The schema is designed to support both routine operations and future analytics. Important fields such as appointment date, start time, service duration, and staff assignment are carefully captured to avoid conflicts and maintain historical accuracy.
 
-\subsection{User Model}
-\begin{itemize}
-\item \texttt{name}, \texttt{email}, \texttt{password}
-\item \texttt{role}: Enum (\texttt{customer}, \texttt{admin}, \texttt{staff})
-\item \texttt{businessId}: Nullable reference to Business
-\item \texttt{notificationPreferences} and \texttt{googleCalendarSync} configurations
-\end{itemize}
+\section{API Design}
+The Slotify backend exposes a set of REST APIs to support authentication, business discovery, appointment creation, review handling, and analytics. These APIs are organized by domain and designed for clear separation of concerns. The appointment API handles availability checks and booking creation, while the auth API manages user login, registration, and token validation.
 
-\subsection{Business Model}
-\begin{itemize}
-\item \texttt{name}, \texttt{slug}, \texttt{category}, \texttt{adminId}
-\item \texttt{workingHours}: Weekly operational schedule
-\item \texttt{bookingSettings}: Custom business policies (e.g., \texttt{minAdvanceTime})
-\end{itemize}
+This API structure makes the system easier to extend and maintain. Future modules such as payment processing, analytics, or branch management can be integrated without disrupting existing endpoints.
 
-\subsection{Service \& Staff Models}
-\begin{itemize}
-\item \textbf{Service}: \texttt{duration}, \texttt{price}, \texttt{bufferTime}, \texttt{staffIds}
-\item \textbf{Staff}: \texttt{specialization}, \texttt{workingHours} (overrides business hours), \texttt{unavailableDates}
-\end{itemize}
+\begin{table}[h]
+\centering
+\caption{Key design modules and responsibilities}
+\begin{tabular}{|p{4cm}|p{8cm}|}
+\hline
+\textbf{Module} & \textbf{Responsibility} \\
+\hline
+Frontend Layer & Provides user-facing appointments, booking forms, dashboards, and business management screens \\
+\hline
+API Layer & Handles authentication, appointments, services, businesses, and reviews through structured endpoints \\
+\hline
+Business Logic Layer & Validates schedules, calculates slot availability, and enforces access rules \\
+\hline
+Database Layer & Stores users, appointments, business records, services, and staff availability data \\
+\hline
+Notification Service & Sends confirmations and reminder emails to customers and staff \\
+\hline
+\end{tabular}
+\end{table}
 
-\subsection{Appointment Model}
-\begin{itemize}
-\item Immutable Fields: \texttt{priceAtBooking}, \texttt{durationAtBooking}
-\item Timestamps: \texttt{appointmentDate}, \texttt{startTime}, \texttt{endTime}, \texttt{blockedUntil}
-\item \texttt{status}: Enum (\texttt{scheduled}, \texttt{confirmed}, \texttt{completed}, \texttt{cancelled}, \texttt{no-show})
-\end{itemize}
+\section{Booking Workflow}
+The booking workflow begins when a customer selects a business and service. The system then checks real-time availability for the chosen staff member or next available option. If a valid slot is found, the booking is created with relevant service details and scheduling metadata.
 
-\subsection{Crucial Unique Concurrency Index}
-\begin{verbatim}
-appointmentSchema.index(
-  { businessId: 1, staffId: 1, appointmentDate: 1, startTime: 1 },
-  {
-    unique: true,
-    partialFilterExpression: { status: { $in: ["scheduled"] } },
-  }
-);
-\end{verbatim}
+\begin{table}[h]
+\centering
+\caption{Booking process stages in Slotify}
+\begin{tabular}{|p{4cm}|p{8cm}|}
+\hline
+\textbf{Stage} & \textbf{Description} \\
+\hline
+Service Selection & The user browses businesses and selects the required service or treatment \\
+\hline
+Slot Check & The system validates available time slots based on staff, hours, and existing bookings \\
+\hline
+Booking Confirmation & A valid appointment is created and stored with required metadata \\
+\hline
+Notification Dispatch & Confirmation and reminder emails are sent to the customer \\
+\hline
+Schedule Update & The business schedule and admin records are updated for correct tracking \\
+\hline
+\end{tabular}
+\end{table}
+
+After booking, the system sends confirmation and reminder notifications and updates the business schedule. The workflow ensures that the slot is reserved only if all validations pass, reducing the risk of double booking and scheduling confusion.
+
+\section{Security Design}
+Security is an essential part of the Slotify design. User authentication is enforced through secure token-based mechanisms, and role-based access control prevents unauthorized actions. Business-specific data is protected so one business cannot access another business's records.
+
+Additional security considerations include validation of business ownership, prevention of unauthorized modifications, and controlled access to sensitive appointment data. These safeguards are important in a platform that handles customer and business information on a shared system.
+
+\section{UI Design Principles}
+The front-end design emphasizes simplicity, clarity, and speed. The user interface is designed to make it easy for customers to find services, check availability, and complete bookings without confusion. Business users also require dashboards that are intuitive and allow quick actions such as scheduling and managing appointments.
+
+The user interface follows an accessible and consistent design approach to support usage across different devices and user roles. This helps create a smooth experience for customers, staff, and administrators while preserving usability across the application.

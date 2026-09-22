@@ -1,81 +1,69 @@
-\chapter{Software Requirements Specification}
+\chapter{Software Requirements Specification (SRS)}
 
-\section{End-to-End User Journeys \& Workflows}
+\section{Purpose and Scope}
+The purpose of Slotify is to provide a digital appointment booking system for service-based businesses that need a reliable way to manage appointments, staff schedules, and customer communication. The system is designed to support online booking, walk-in scheduling, confirmation notifications, and business-level analytics while reducing manual coordination and scheduling errors.
 
-\subsection{Journey 1: Customer Online Booking}
-\begin{enumerate}
-\item \textbf{Discovery}: Customer navigates to \texttt{/search} or \texttt{/business/:slug}.
-\item \textbf{Service Selection}: Customer clicks "Book" on "Haircut \& Styling" (Rs. 800, 45 mins).
-\item \textbf{Staff Selection}: Customer chooses "Daksh Patel (Master Stylist)" or selects "Any Available".
-\item \textbf{Calendar Date}: Customer picks an upcoming Friday.
-\item \textbf{Slot Generation}: Frontend fetches \texttt{GET /api/appointments/slots}. The slot engine calculates all available 45-minute windows taking into account Daksh's shifts, lunch breaks, and existing bookings.
-\item \textbf{Booking Confirmation}: Customer selects 11:15 AM, enters special notes, and clicks "Confirm Booking".
-\item \textbf{Atomic Creation}:
-   \begin{itemize}
-   \item Backend verifies slot validity, locks the unique index entry, snapshots \texttt{priceAtBooking: 800} and \texttt{durationAtBooking: 45}.
-   \item Generates an in-app notification.
-   \item Dispatches a Brevo confirmation email containing an attached \texttt{invite.ics} calendar file.
-   \item Redirects customer to confirmation screen displaying a 1-click Google Calendar sync button.
-   \end{itemize}
-\end{enumerate}
+The scope of the project includes customer booking, staff management, business administration, automated notifications, and real-time slot validation. The application is focused on service-oriented businesses such as salons, clinics, therapy centers, and repair shops, where appointment timing and service duration are essential to daily operations.
 
-\subsection{Journey 2: Specialist Service Execution}
-\begin{enumerate}
-\item Specialist logs into \texttt{/staff} portal and views today's chronological agenda.
-\item Customer arrives on premises at 11:10 AM. Specialist clicks \textbf{"Check-In"}. Status transitions from \texttt{scheduled} to \texttt{confirmed}.
-\item Service completes at 11:55 AM. Specialist clicks \textbf{"Complete Appointment"}.
-\item Status transitions to \texttt{completed}. The business's total completed appointment counter increments.
-\item Brevo automatically dispatches a "Session Completed" email to the customer with an invitation to leave feedback.
-\end{enumerate}
+\section{User Roles}
+The system supports multiple user roles with distinct responsibilities and access rights.
 
-\subsection{Journey 3: Verified Review Scorecard}
-\begin{enumerate}
-\item Customer logs in and opens \texttt{/my-appointments} or clicks the link in their post-session email.
-\item A \textbf{"Write Review"} button is active exclusively for this completed appointment.
-\item Customer awards 5 stars and writes feedback.
-\item Backend verifies that:
-   \begin{itemize}
-   \item Appointment status is \texttt{'completed'}.
-   \item Requesting user matches \texttt{appointment.customerId}.
-   \item No review exists yet for this \texttt{appointmentId}.
-   \end{itemize}
-\item Review is saved. The business's \texttt{averageRating} and \texttt{totalReviews} are recalculated, and the review appears dynamically on the public storefront.
-\end{enumerate}
+\subsection{Customer}
+Customers can search for businesses, view available services, select time slots, and book appointments online. They also receive confirmations and reminders and may provide feedback after a completed service.
 
-\subsection{Journey 4: Front-Desk Walk-In (POS Mode)}
-\begin{enumerate}
-\item An unregistered walk-in customer walks into a medical clinic.
-\item Receptionist opens \texttt{/admin} dashboard and clicks \textbf{"+ New Walk-In"}.
-\item Receptionist selects the service, assigns an available doctor, enters the customer's name and phone number.
-\item Backend creates an appointment with \texttt{isWalkIn: true} and \texttt{customerId: null}.
-\item The doctor's schedule immediately blocks out the slot, preventing online clients from double-booking.
-\end{enumerate}
+\subsection{Business Admin}
+Business administrators manage working hours, service pricing, staff profiles, and business policies. They can monitor bookings, manage staff schedules, and review business performance.
 
-\section{Complete REST API Specification}
-\begin{verbatim}
-Authentication (/api/auth)
-- POST /api/auth/register : Registers a new account.
-- POST /api/auth/login : Authenticates credentials.
-- GET  /api/auth/me : Retrieves the profile of the current user.
-- POST /api/auth/refresh-token : Issues a new access token.
+\subsection{Staff Member}
+Staff members can view their assigned appointments, confirm attendance, and complete service sessions. They are also responsible for maintaining an accurate schedule for the business.
 
-Appointments (/api/appointments)
-- GET  /api/appointments/slots : Computes available time slots.
-- POST /api/appointments : Creates a new appointment with atomic lock.
-- POST /api/appointments/walk-in : Creates a walk-in appointment.
-- PATCH /api/appointments/:id/reschedule : Reschedules an appointment.
-- PATCH /api/appointments/:id/cancel : Cancels an appointment.
+\subsection{Reception / Walk-In User}
+The receptionist or front desk user can create walk-in bookings for customers who do not book online. This role helps bridge the gap between digital and physical operations.
 
-Businesses & Discovery (/api/business)
-- GET  /api/business/:slug : Fetches public storefront.
-- PUT  /api/business/settings : Updates operating hours and policies.
-- GET  /api/search?q=... : ReDoS-safe search.
+\section{Functional Requirements}
+Slotify must provide functional capabilities that support appointment booking, schedule management, communication, and reporting.
 
-Services (/api/services)
-- GET  /api/services/business/:businessId : Fetches all active services.
-- POST /api/services : Creates a new catalog service.
+\begin{itemize}
+\item The system must allow a customer to browse a business and select a service.
+\item The system must display valid time slots based on business hours, staff availability, and existing bookings.
+\item The system must prevent double booking through validation and database-level constraints.
+\item The system must generate confirmation emails and reminder notifications.
+\item The system must support the creation of walk-in appointments from the admin panel.
+\item The system must allow staff and admins to manage bookings and status changes.
+\item The system must support review submission after a completed appointment.
+\end{itemize}
 
-Reviews & Analytics
-- POST /api/reviews : Submits a star rating and comment.
-- GET  /api/analytics/overview : Revenue totals and booking counts.
-\end{verbatim}
+\section{Non-Functional Requirements}
+The application should be reliable, fast, secure, and easy to maintain. Performance is critical during peak booking periods when multiple customers may attempt to reserve the same available time slot. Security must be enforced through authentication, role-based access control, and tenant isolation. Maintainability also matters because the system may be extended with payment integration, analytics, and mobile support in future iterations.
+
+\begin{table}[h]
+\centering
+\caption{Non-functional requirements for Slotify}
+\begin{tabular}{|p{3cm}|p{4cm}|p{4cm}|}
+\hline
+\textbf{Requirement} & \textbf{Expectation} & \textbf{Design response} \\
+\hline
+Performance & Slot availability must be returned quickly. & Indexed appointment queries and lightweight REST responses. \\
+\hline
+Reliability & A confirmed slot must not be offered twice. & Server-side validation and database-level conflict prevention. \\
+\hline
+Security & Users access only authorised information. & JWT authentication, role checks, and tenant-scoped data access. \\
+\hline
+Usability & Routine actions should be easy to complete. & Clear booking flow and role-specific dashboards. \\
+\hline
+Maintainability & New features should not disrupt the system. & Modular React components and controller--model--route backend structure. \\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Use Case Diagram}
+The use case model of Slotify includes actors such as the customer, business admin, staff member, and receptionist. The customer interacts with booking and review flows, while the admin and staff manage the business schedule and service execution. The receptionist supports walk-in requests and front desk operations. Together, these actors form the complete system workflow for appointment booking and service delivery.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure 3-1.jpeg}
+\caption{Use case diagram for Slotify user interactions and role-based workflow}
+\end{figure}
+
+\section{Constraints}
+The system is constrained by several real-world requirements. Business schedules vary by day, staff member, and service category. The solution must therefore support flexible working hours and service-specific durations. The system also needs to operate under a multi-business environment, where data isolation and secure access are essential. In addition, the project is limited by practical implementation constraints such as time, deployment environment, and the need to keep the system simple enough for business users to adopt without technical overhead.

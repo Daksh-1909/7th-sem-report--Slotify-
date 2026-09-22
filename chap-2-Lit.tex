@@ -1,46 +1,77 @@
 \chapter{Literature Survey}
-\section{Practical}
-Appointment scheduling is a critical part of service-based businesses, and many existing systems focus on automating booking while improving customer convenience. Popular platforms such as Calendly, Acuity Scheduling, Setmore, and Google Calendar are widely used for appointment management, but they are often designed for general-purpose scheduling rather than for local service businesses with complex staff availability, walk-in customers, and multi-service operations.
 
-A common limitation in many existing solutions is that they do not fully support the operational needs of small service providers. For example, a salon, clinic, or wellness centre may require a system that handles multiple staff members, multiple service durations, customer reminders, and real-time slot availability. Some tools provide basic scheduling but do not prevent double booking effectively at the database level. Others allow bookings but lack a proper business owner dashboard, strong analytics, or business-specific workflow management.
+\section{Overview}
+Appointment scheduling plays a central role in service-based businesses such as salons, clinics, beauty centers, repair shops, and wellness studios. In such businesses, each booking affects staff workload, customer satisfaction, and revenue generation. A poor scheduling system can create double bookings, missed appointments, idle time, and unnecessary manual work. As a result, scheduling is not only a convenience feature but also an operational need.
 
-Several well-known appointment systems offer online booking and reminder features, but they often focus on simplicity and general usage rather than multi-tenant business management. Local businesses also face challenges such as no-shows, dead slots, manual rescheduling, and poor visibility into repeat trends. This makes appointment booking a problem not only of convenience but also of operational efficiency and revenue management.
+Many small businesses still rely on phone calls, manual calendars, or informal record keeping. Although this approach may work at a very small scale, it becomes difficult to manage as business size and customer demand increase. Literature in scheduling and operations management highlights that effective booking systems should reduce confusion, improve utilization, and support timely communication between customers and service providers.
 
-The literature around scheduling systems and business operations highlights the importance of real-time coordination, automated communication, and reliable data handling. In service-based organizations, poor scheduling creates delays, lost revenue, and customer dissatisfaction. Therefore, a robust scheduling system must provide both customer convenience and business-side control.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure 2-1.png}
+\caption{Overview of existing appointment scheduling challenges in service-based businesses}
+\end{figure}
 
-\section{Summary of Literature Survey}
-Table~\ref{tab:litreview} summarizes the major insights from the appointment and scheduling domain and shows the gap that Slotify aims to address.
+The review of relevant research and existing platforms shows that modern systems generally focus on online booking, availability management, and reminders. However, many of them are designed for general-purpose scheduling rather than for local service businesses that need staff coordination, service-specific booking rules, and business-level operational visibility.
 
-\begin{longtable}{|p{0.5cm}|p{3.2cm}|p{4.8cm}|p{4.8cm}|}
-\caption{Summary of Literature Survey} \label{tab:litreview} \\
+\section{Paper Reviews}
+A review of scheduling and service management literature indicates that appointment systems are most successful when they support real-time coordination, reduce administrative overhead, and improve customer communication. Earlier systems were mainly designed to automate calendars, but later solutions expanded to include reminders, confirmations, and availability checks.
+
+Research in service operations suggests that booking systems are most effective when they help businesses manage time slots without creating scheduling conflicts. Frequent issues in conventional systems include conflict between staff schedules, poor visibility of occupancy, and limited support for service-specific duration and availability. These problems become more severe in businesses where different treatments require different durations and different staff skills.
+
+In addition, the literature on customer behavior and service delivery emphasizes that missed appointments and late confirmations create financial losses and reduce customer trust. This is particularly relevant for service-based industries where customer retention depends on convenience, reliability, and professional communication. Therefore, the design of an effective booking system must consider both operational efficiency and customer experience.
+
+Several studies in digital service technology also highlight that automation improves coordination when it is integrated into the booking cycle rather than used as an isolated add-on. For example, reminder messages, appointment confirmation, and real-time availability checks improve the efficiency of scheduling by reducing no-shows and helping customers take timely action. This is one of the major motivations behind developing a dedicated platform such as Slotify.
+
+\section{Comparison of Existing Platforms}
+Table~\ref{tab:litreview} compares several existing scheduling platforms with the proposed Slotify system. The purpose is to identify the strengths of current tools and the missing features that are still not fully addressed for local service-based businesses.
+
+\begin{table}[h]
+\centering
+\caption{Feature Comparison: Slotify vs. Existing Platforms} \label{tab:litreview}
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|p{3.2cm}|c|c|c|c|c|}
 \hline
-\textbf{Sr.} & \textbf{System / Study} & \textbf{Key Contribution} & \textbf{Limitation} \\
+\textbf{Feature} & \textbf{Calendly} & \textbf{Booksy} & \textbf{Acuity} & \textbf{SimplyBook} & \textbf{Slotify} \\
 \hline
-\endfirsthead
-\multicolumn{4}{c}{\tablename\ \thetable{} -- \textit{Continued}} \\
+Real-time slot display & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
 \hline
-\textbf{Sr.} & \textbf{System / Study} & \textbf{Key Contribution} & \textbf{Limitation} \\
+Automated email reminders & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
 \hline
-\endhead
+Multi-staff support & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
 \hline
-\endfoot
+Analytics dashboard & Partial & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+\hline
+Open-source / free & $\times$ & $\times$ & $\times$ & $\times$ & $\checkmark$ \\
+\hline
+Split-shift scheduling & $\times$ & Partial & Partial & $\checkmark$ & $\checkmark$ \\
+\hline
+AI-based slot suggestions & $\times$ & $\times$ & $\times$ & Partial & Planned \\
+\hline
+Payment integration & $\times$ & $\checkmark$ & $\checkmark$ & $\checkmark$ & Planned \\
+\hline
+Calendar sync & $\checkmark$ & Limited & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+\hline
+Self-hostable & $\times$ & $\times$ & $\times$ & $\times$ & $\checkmark$ \\
+\hline
+\end{tabular}%
+}
+\end{table}
 
-1 & Calendly & Simple online appointment scheduling for customers and professionals & Limited custom workflows for multi-service small businesses \\ \hline
+From the comparison, it is clear that popular platforms provide useful features such as booking forms, reminders, and basic dashboards. However, they still tend to focus on general-purpose scheduling rather than the unique operational needs of small service businesses. Many tools do not provide strong support for separate staff scheduling rules, service-based availability, or business ownership control in one integrated system.
 
-2 & Acuity Scheduling & Streamlined booking with service-based time slots & Less focus on local business dashboards and staff analytics \\ \hline
+Slotify addresses these gaps by supporting business-specific workflows, multi-staff coordination, and a simplified booking experience tailored to service businesses. This makes it more suitable for local providers that require flexibility, affordability, and transparent operational control.
 
-3 & Setmore & Appointment booking with basic reminders and calendar integration & May not fully address real-time conflict prevention and multi-tenant operations \\ \hline
+\section{Reminder Effectiveness}
+Reminder systems are widely recognized as one of the most effective ways to reduce missed appointments and improve scheduling reliability. When a customer receives a confirmation and reminder before the appointment time, the chance of no-show decreases significantly. This effect is important in service businesses because even a small number of unfilled slots can cause lost revenue and poor customer flow.
 
-4 & Google Calendar & Shared calendar-based scheduling and collaboration & Not optimized for direct business appointment management and customer booking flows \\ \hline
+The effectiveness of reminders is not only due to memory support but also because they create a stronger communication loop between the customer and the business. Automated reminders reduce reliance on manual follow-ups and ensure that customers are informed about their booking status. They also help businesses recover last-minute cancellations by allowing the time slot to be offered to other customers more quickly.
 
-5 & Traditional Manual Scheduling & Phone-based booking and paper records & High chance of double booking, missed reminders, and poor data visibility \\ \hline
+In this context, reminders are not an optional feature but a core part of the booking experience. A scheduling system that includes reminders can deliver better punctuality, lower cancellation risk, and stronger service continuity. This is one reason why Slotify emphasizes confirmation and reminder functionality as part of its core design.
 
-6 & Modern Digital Booking Platforms & Automates booking and communication workflows & Often lack deep business intelligence, role-based access, and local business personalization \\ \hline
+\section{Research Gap / What the Review Did Not Resolve}
+Although existing scheduling platforms offer useful features, they still do not completely solve the challenges faced by local service businesses. Many solutions are generic, while the actual needs of salons, clinics, therapy centers, and repair shops are often highly specific. The review also shows that no single platform fully combines flexible business management, multi-staff coordination, low-cost deployment, and customer-focused scheduling in a simplified form.
 
-\end{longtable}
+Another gap is the limited focus on service-specific business workflows. Many systems support appointment creation but do not adequately support staff availability rules, split scheduling, operational analytics, or business customization. In many cases, the solution is designed from the software side rather than from the actual daily challenges faced by business owners.
 
-The review shows that while common scheduling tools provide convenience, they do not fully address the operational constraints of local service businesses. In particular, small businesses need a platform that combines booking, scheduling conflict prevention, notifications, staff coordination, and analytics in one system. Slotify is designed to fill this gap by offering a smart appointment booking experience tailored for service-based businesses.
-
-The platform goes beyond basic scheduling by including business-specific functionality such as staff management, service availability, appointment reminders, and reliable data handling. These features directly address the practical limitations of traditional booking methods and general-purpose scheduling tools.
-
-Therefore, the literature review indicates that there is a clear need for a specialized appointment booking system that is scalable, easy to use, and focused on the realities of service businesses. Slotify is positioned as such a solution by combining practical business workflows with automated, real-time appointment management.
+This review therefore highlights the need for a dedicated platform that is practical, scalable, and tailored to real service operations. Slotify is intended to fill this gap by combining online appointment booking, real-time availability checks, reminder communication, and business-oriented scheduling control in one unified system.

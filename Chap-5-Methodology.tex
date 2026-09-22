@@ -1,60 +1,69 @@
-\chapter{Core Logic \& Mechanics}
+\chapter{Methodology}
 
-\section{How the Database Works with the Backend}
+\section{Development Approach}
+The development of Slotify followed a structured software engineering approach that combined requirement analysis, system design, implementation, and testing. The project was designed in phases so that each stage informed the next and helped maintain a clear path from concept to working system. This approach was important because the platform involves multiple user roles, booking workflows, and scheduling logic that must remain consistent across the system.
 
-The interaction between the Express backend and MongoDB Atlas is architected around \textbf{safe connection pooling}, \textbf{atomic writes}, \textbf{defense against race conditions}, and \textbf{immutable historical records}.
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{images/figure 5-1.jpeg}
+\caption{Methodology overview for the Slotify development lifecycle}
+\end{figure}
 
-\subsection{Connection Pooling \& Event Lifecycle}
-Mongoose initializes a managed TCP connection pool:
-\begin{itemize}
-\item \texttt{maxPoolSize: 10}: Limits concurrent sockets to avoid exhausting MongoDB Atlas M0/M10 thread thresholds.
-\item \texttt{serverSelectionTimeoutMS: 5000}: Fails quickly during network partitioning.
-\item \texttt{socketTimeoutMS: 45000}: Prevents hanging sockets from blocking Express worker threads.
-\end{itemize}
+\section{Phase 1: Requirements Gathering}
+The first phase focused on identifying the core challenges faced by service-based businesses. This included understanding issues such as appointment conflicts, missed bookings, manual scheduling, and lack of business visibility. Input from the problem statement and literature review helped define the critical functional and non-functional requirements for the project.
 
-\subsection{The Concurrency Problem \& The Hardware-Enforced Solution}
-Slotify solves this via \textbf{Database-Level Partial Unique Constraints}:
-\begin{itemize}
-\item The partial filter expression \texttt{\{ status: \{ \$in: ["scheduled"] \} \}} ensures that only active scheduled bookings occupy the unique index bucket.
-\item When multiple users hit the server at the exact same millisecond, MongoDB's internal B-tree lock allows only one write to commit.
-\item The second write throws an atomic database exception: \texttt{MongoServerError: E11000 duplicate key error}.
-\item The centralized error handler inspects the error and rejects the subsequent requests with a \texttt{409 Conflict} response.
-\end{itemize}
+\section{Phase 2: System Design}
+Once the requirements were clear, the architecture and data model were designed to support multi-user scheduling. The design included a modular frontend, backend API layer, and database schema intended to handle business operations, service scheduling, and role-based access. The design phase also defined the flow of booking creation, confirmation, and reminder communication.
 
-\subsection{Immutable Snapshot Pricing}
-To guarantee financial and historical accuracy:
-\begin{itemize}
-\item When an appointment is created, it snapshots \texttt{priceAtBooking} and \texttt{durationAtBooking}.
-\item Analytics aggregation pipelines group and sum \texttt{\$priceAtBooking}. Audit trails, receipts, and business payouts remain historically true regardless of future rate card edits.
-\end{itemize}
+\section{Phase 3: Implementation}
+The implementation phase involved building the backend logic, creating the frontend interfaces, and integrating the scheduling components. Core functionality such as slot generation, appointment validation, authentication, and notification services were implemented during this stage. The project was developed in a way that allowed real system operations to be tested with realistic booking scenarios.
 
-\section{Dynamic Slot Engine \& Concurrency Control}
-The availability engine runs in real-time when clients view the booking calendar.
+\section{Phase 4: Testing}
+Testing was carried out to validate that the application could create appointments correctly, prevent conflicts, and respond reliably under different conditions. This included checking the booking flow, verifying role access, and testing the reliability of slot calculation. The testing phase also helped identify issues related to concurrency and database constraints.
 
-\subsection{Slot States Explained}
-\begin{enumerate}
-\item \textbf{available}: Open for booking.
-\item \textbf{booked}: An active appointment occupies this time window.
-\item \textbf{too-soon}: Slot start time violates \texttt{minAdvanceTime}.
-\item \textbf{too-far}: Date exceeds \texttt{maxAdvanceTime}.
-\item \textbf{past}: The time has already passed.
-\end{enumerate}
+\section{Tools and Environment}
+The project was developed using a modern web development stack to support scalability and maintainability. The frontend was built using React, while the backend used Node.js and Express. MongoDB was used for database storage, and email-based notifications were integrated through a transactional service. These tools were selected to support both the scheduling logic and the overall user experience.
 
-\subsection{Dynamic Slot Calculation Algorithm}
-\begin{verbatim}
-1. Load working hours for targetDate and timezone.
-2. If date is a holiday or business is closed, return empty set.
-3. For each eligible staff member:
-   a. Check staff leave records and blackout dates.
-   b. Build candidate intervals from shift boundaries.
-   c. Exclude intervals overlapping breaks.
-   d. For each interval, calculate state (booked, available, too-soon, etc.).
-4. Merge state results, sort, and return deduplicated slots.
-\end{verbatim}
+\begin{table}[h]
+\centering
+\caption{Tools used during development}
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{5cm}|}
+\hline
+\textbf{Category} & \textbf{Tool} & \textbf{Purpose} \\
+\hline
+Version control & Git and GitHub & Source control and team collaboration \\
+\hline
+IDE & Visual Studio Code & Primary development environment \\
+\hline
+API testing & Postman & Endpoint testing and collection management \\
+\hline
+UI prototyping & Figma & Wireframes and layout planning \\
+\hline
+Database GUI & MongoDB Compass & Schema inspection and visual debugging \\
+\hline
+Frontend deployment & Vercel & Continuous deployment from GitHub \\
+\hline
+Backend deployment & Render & Node.js cloud hosting \\
+\hline
+Database hosting & MongoDB Atlas & Managed cloud database \\
+\hline
+\end{tabular}
+\end{table}
 
-\section{Email Engine, iCalendar \& Notification Systems}
-\begin{itemize}
-\item \textbf{Brevo Transactional Email Engine}: Dispatches multi-role HTML emails for confirmations, reminders, cancellations, and reviews.
-\item \textbf{RFC-5545 iCalendar (.ics)}: Automatic generation of \texttt{.ics} files containing \texttt{METHOD:REQUEST} to sync with Apple/Outlook calendars.
-\item \textbf{Google Calendar 1-Click}: Direct deep links generated on the frontend for instant Google Calendar integration.
-\end{itemize}
+\begin{table}[h]
+\centering
+\caption{Development phases and expected outputs}
+\begin{tabular}{|p{3.5cm}|p{8cm}|}
+\hline
+\textbf{Phase} & \textbf{Outcome} \\
+\hline
+Requirements Gathering & Problem definition, business needs, and functional requirements identified \\
+\hline
+System Design & Architecture, database model, and workflow structure planned \\
+\hline
+Implementation & Frontend, backend, and scheduling logic developed \\
+\hline
+Testing & Appointment logic verified for reliability, conflict prevention, and correctness \\
+\hline
+\end{tabular}
+\end{table}
