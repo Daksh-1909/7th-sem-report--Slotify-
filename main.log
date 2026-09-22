@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  23 SEP 2026 00:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  23 SEP 2026 00:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1458,27 +1458,63 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 
 (cover.tex
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 8
-.
 
-(C:\Users\DAKSH\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
-File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `phv' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 {\Large \bf }}\\
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 {\Large \bf }}\\
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 {\Large \bf }}\\
+                     
+? 
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 {\Large \bf }}\\
+                     
+? 
 <parullogo.png, id=223, 1172.38pt x 625.33624pt>
 File: parullogo.png Graphic file (type png)
 <use parullogo.png>
-Package pdftex.def Info: parullogo.png  used on input line 45.
+Package pdftex.def Info: parullogo.png  used on input line 34.
 (pdftex.def)             Requested size: 211.01929pt x 112.55566pt.
-)
-[1
+<Digital Use - PU NAAC Logo.jpg, id=225, 7226.5182pt x 1994.1702pt>
+File: Digital Use - PU NAAC Logo.jpg Graphic file (type jpg)
+<use Digital Use - PU NAAC Logo.jpg>
+Package pdftex.def Info: Digital Use - PU NAAC Logo.jpg  used on input line 36.
+
+(pdftex.def)             Requested size: 144.56088pt x 39.89182pt.
+) [1
 
 
 {C:/Users/DAKSH/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/DAKS
-H/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./parullogo.png>]
+H/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./parullogo.png> 
+<./Digital Use - PU NAAC Logo.jpg>]
 \openout2 = `Certificate.aux'.
 
  (Certificate.tex
@@ -2007,23 +2043,22 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 225151B56C147FA9CFD90CD62C09B8B9;10138.
  ) 
 Here is how much of TeX's memory you used:
- 26149 strings out of 467441
- 459586 string characters out of 5407591
+ 26107 strings out of 467441
+ 459057 string characters out of 5407591
  884942 words of memory out of 5000000
- 54534 multiletter control sequences out of 15000+600000
- 700245 words of font info for 344 fonts, out of 8000000 for 9000
+ 54484 multiletter control sequences out of 15000+600000
+ 700716 words of font info for 349 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,12n,83p,1003b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/jkps
 y.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/public/kpfonts/
-jkpttmn8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/hel
-vetic/uhvb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmr8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on main.pdf (32 pages, 1727998 bytes).
+jkpttmn8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmr8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/urw/tim
+es/utmri8a.pfb>
+Output written on main.pdf (32 pages, 8077324 bytes).
 PDF statistics:
- 553 PDF objects out of 1000 (max. 8388607)
+ 549 PDF objects out of 1000 (max. 8388607)
  143 named destinations out of 1000 (max. 500000)
- 83395 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 88008 words of extra memory for PDF output out of 89155 (max. 10000000)
 
