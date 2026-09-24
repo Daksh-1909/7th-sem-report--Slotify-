@@ -1,23 +1,23 @@
 \acswitchoff 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces System overview of the Slotify appointment workflow}}{4}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces System overview of the Slotify appointment workflow}}{5}{figure.caption.12}%
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Overview of existing appointment scheduling challenges in service-based businesses}}{8}{figure.caption.14}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Use case diagram for Slotify user interactions and role-based workflow}}{15}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Use case diagram for Slotify user interactions and role-based workflow}}{17}{figure.caption.17}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces System architecture of the Slotify booking platform}}{18}{figure.caption.18}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Database model and relationship flow for business, staff, and appointments}}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces System architecture of the Slotify booking platform}}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Database model and relationship flow for business, staff, and appointments}}{20}{figure.caption.19}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Methodology overview for the Slotify development lifecycle}}{22}{figure.caption.22}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Methodology overview for the Slotify development lifecycle}}{24}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Business configuration and setup screen}}{27}{figure.caption.25}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Business profile and service discovery interface}}{27}{figure.caption.26}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Landing page of the Slotify platform}}{29}{figure.caption.27}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Login interface for the user authentication flow}}{29}{figure.caption.28}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Admin dashboard showing bookings, activities, and business overview}}{30}{figure.caption.29}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Appointment list and scheduling records}}{30}{figure.caption.30}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Appointment lifecycle flow from booking to service completion}}{31}{figure.caption.32}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Business configuration and setup screen}}{30}{figure.caption.25}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Business profile and service discovery interface}}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Landing page of the Slotify platform}}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Login interface for the user authentication flow}}{32}{figure.caption.28}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Admin dashboard showing bookings, activities, and business overview}}{33}{figure.caption.29}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Appointment list and scheduling records}}{33}{figure.caption.30}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Appointment lifecycle flow from booking to service completion}}{35}{figure.caption.32}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
