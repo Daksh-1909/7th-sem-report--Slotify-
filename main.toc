@@ -66,6 +66,6 @@
 \contentsline {section}{\numberline {8.6}Multi-Language Support}{39}{section.8.6}%
 \contentsline {section}{\numberline {8.7}Multi-Branch Business Support}{39}{section.8.7}%
 \contentsline {chapter}{\numberline {9}Research Paper / Survey Paper and Plagiarism Report}{40}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Research Paper}{40}{section.9.1}%
+\contentsline {section}{\numberline {9.1}Research Paper}{41}{section.9.1}%
 \contentsline {section}{\numberline {9.2}Plagiarism Report}{49}{section.9.2}%
-\contentsline {chapter}{References}{61}{chapter*.34}%
+\contentsline {chapter}{References}{60}{chapter*.34}%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  24 SEP 2026 19:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.22)  24 SEP 2026 19:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2128,37 +2128,52 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (Chap-9-Research.tex
 Chapter 9.
-<CSE_182 research paper.pdf, id=646, 614.295pt x 794.97pt>
-File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf>
-Package pdftex.def Info: CSE_182 research paper.pdf  used on input line 9.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<CSE_182 research paper.pdf, id=648, page=1, 614.295pt x 794.97pt>
+<CSE_182 research paper.pdf, id=646, page=1, 614.295pt x 794.97pt>
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 1>
 Package pdftex.def Info: CSE_182 research paper.pdf , page1 used on input line 
-9.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf, page 1>
-Package pdftex.def Info: CSE_182 research paper.pdf , page1 used on input line 
-9.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+11.
+(pdftex.def)             Requested size: 452.04974pt x 585.00555pt.
 [40
 
 
 
 
 ]
+<CSE_182 research paper.pdf, id=651, 614.295pt x 794.97pt>
 File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf, page 1>
-Package pdftex.def Info: CSE_182 research paper.pdf , page1 used on input line 
-9.
+<use CSE_182 research paper.pdf>
+Package pdftex.def Info: CSE_182 research paper.pdf  used on input line 13.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<CSE_182 research paper.pdf, id=653, page=2, 614.295pt x 794.97pt>
+File: CSE_182 research paper.pdf Graphic file (type pdf)
+<use CSE_182 research paper.pdf, page 2>
+Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
+13.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: CSE_182 research paper.pdf Graphic file (type pdf)
+<use CSE_182 research paper.pdf, page 2>
+Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
+13.
+(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[41 <./CSE_182 research paper.pdf>]
+File: CSE_182 research paper.pdf Graphic file (type pdf)
+<use CSE_182 research paper.pdf, page 2>
+Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf, page 1>
-Package pdftex.def Info: CSE_182 research paper.pdf , page1 used on input line 
-9.
+<use CSE_182 research paper.pdf, page 2>
+Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2169,36 +2184,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf, page 1>
-Package pdftex.def Info: CSE_182 research paper.pdf , page1 used on input line 
-9.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[41
-
- <./CSE_182 research paper.pdf>]
-<CSE_182 research paper.pdf, id=676, page=2, 614.295pt x 794.97pt>
-File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 2>
 Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
-9.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf, page 2>
-Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
-9.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-File: CSE_182 research paper.pdf Graphic file (type pdf)
-<use CSE_182 research paper.pdf, page 2>
-Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [42
 
@@ -2207,12 +2195,12 @@ Package pdftex.def Info: CSE_182 research paper.pdf , page2 used on input line
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 3>
 Package pdftex.def Info: CSE_182 research paper.pdf , page3 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 3>
 Package pdftex.def Info: CSE_182 research paper.pdf , page3 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2225,7 +2213,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 3>
 Package pdftex.def Info: CSE_182 research paper.pdf , page3 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [43
 
@@ -2234,12 +2222,12 @@ Package pdftex.def Info: CSE_182 research paper.pdf , page3 used on input line
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 4>
 Package pdftex.def Info: CSE_182 research paper.pdf , page4 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 4>
 Package pdftex.def Info: CSE_182 research paper.pdf , page4 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2252,7 +2240,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 4>
 Package pdftex.def Info: CSE_182 research paper.pdf , page4 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [44
 
@@ -2261,12 +2249,12 @@ Package pdftex.def Info: CSE_182 research paper.pdf , page4 used on input line
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 5>
 Package pdftex.def Info: CSE_182 research paper.pdf , page5 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 5>
 Package pdftex.def Info: CSE_182 research paper.pdf , page5 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2279,7 +2267,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 5>
 Package pdftex.def Info: CSE_182 research paper.pdf , page5 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [45
 
@@ -2288,12 +2276,12 @@ Package pdftex.def Info: CSE_182 research paper.pdf , page5 used on input line
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 6>
 Package pdftex.def Info: CSE_182 research paper.pdf , page6 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 6>
 Package pdftex.def Info: CSE_182 research paper.pdf , page6 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2306,7 +2294,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 6>
 Package pdftex.def Info: CSE_182 research paper.pdf , page6 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [46
 
@@ -2315,12 +2303,12 @@ Package pdftex.def Info: CSE_182 research paper.pdf , page6 used on input line
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 7>
 Package pdftex.def Info: CSE_182 research paper.pdf , page7 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 7>
 Package pdftex.def Info: CSE_182 research paper.pdf , page7 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2333,7 +2321,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 7>
 Package pdftex.def Info: CSE_182 research paper.pdf , page7 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [47
 
@@ -2342,12 +2330,12 @@ Package pdftex.def Info: CSE_182 research paper.pdf , page7 used on input line
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 8>
 Package pdftex.def Info: CSE_182 research paper.pdf , page8 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 8>
 Package pdftex.def Info: CSE_182 research paper.pdf , page8 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2360,7 +2348,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: CSE_182 research paper.pdf Graphic file (type pdf)
 <use CSE_182 research paper.pdf, page 8>
 Package pdftex.def Info: CSE_182 research paper.pdf , page8 used on input line 
-9.
+13.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [48
 
@@ -2370,13 +2358,27 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=742, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=742, page=1, 614.295pt x 794.97pt>
+File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
+vice-Based Businesses.pdf Graphic file (type pdf)
+<use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
+ice-Based Businesses.pdf, page 1>
+Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
+ng Platform for Service-Based Businesses.pdf , page1 used on input line 19.
+(pdftex.def)             Requested size: 452.04974pt x 585.00555pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
+ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
+ PDF version <1.7>, but at most version <1.5> allowed
+<Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
+Based Businesses.pdf, id=743, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
 ice-Based Businesses.pdf>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf  used on input line 13.
+ng Platform for Service-Based Businesses.pdf  used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 
 
@@ -2389,20 +2391,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=744, page=1, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=745, page=2, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 1>
+ice-Based Businesses.pdf, page 2>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page1 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page2 used on input line 21.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 1>
+ice-Based Businesses.pdf, page 2>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page1 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page2 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2411,20 +2413,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[49]
+[49 <./Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Se
+rvice-Based Businesses.pdf>]
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 1>
+ice-Based Businesses.pdf, page 2>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page1 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page2 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 1>
+ice-Based Businesses.pdf, page 2>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page1 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page2 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 
@@ -2437,9 +2440,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 1>
+ice-Based Businesses.pdf, page 2>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page1 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page2 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [50
 
@@ -2450,20 +2453,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=783, page=2, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=815, page=3, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 2>
+ice-Based Businesses.pdf, page 3>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page2 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page3 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 2>
+ice-Based Businesses.pdf, page 3>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page2 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page3 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2475,9 +2478,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 2>
+ice-Based Businesses.pdf, page 3>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page2 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page3 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [51
 
@@ -2488,20 +2491,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=820, page=3, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=821, page=4, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 3>
+ice-Based Businesses.pdf, page 4>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page3 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page4 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 3>
+ice-Based Businesses.pdf, page 4>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page3 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page4 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2513,9 +2516,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 3>
+ice-Based Businesses.pdf, page 4>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page3 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page4 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [52
 
@@ -2526,20 +2529,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=825, page=4, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=843, page=5, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 4>
+ice-Based Businesses.pdf, page 5>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page4 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page5 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 4>
+ice-Based Businesses.pdf, page 5>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page4 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page5 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2551,9 +2554,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 4>
+ice-Based Businesses.pdf, page 5>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page4 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page5 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [53
 
@@ -2564,20 +2567,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=847, page=5, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=856, page=6, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 5>
+ice-Based Businesses.pdf, page 6>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page5 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page6 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 5>
+ice-Based Businesses.pdf, page 6>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page5 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page6 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2589,9 +2592,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 5>
+ice-Based Businesses.pdf, page 6>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page5 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page6 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [54
 
@@ -2602,20 +2605,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=860, page=6, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=861, page=7, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 6>
+ice-Based Businesses.pdf, page 7>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page6 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page7 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 6>
+ice-Based Businesses.pdf, page 7>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page6 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page7 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2627,9 +2630,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 6>
+ice-Based Businesses.pdf, page 7>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page6 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page7 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [55
 
@@ -2640,20 +2643,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=865, page=7, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=878, page=8, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 7>
+ice-Based Businesses.pdf, page 8>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page7 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page8 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 7>
+ice-Based Businesses.pdf, page 8>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page7 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page8 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2665,9 +2668,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 7>
+ice-Based Businesses.pdf, page 8>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page7 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page8 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [56
 
@@ -2678,20 +2681,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=882, page=8, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=883, page=9, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 8>
+ice-Based Businesses.pdf, page 9>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page8 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page9 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 8>
+ice-Based Businesses.pdf, page 9>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page8 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page9 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2703,9 +2706,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 8>
+ice-Based Businesses.pdf, page 9>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page8 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page9 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [57
 
@@ -2716,20 +2719,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=888, page=9, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=889, page=10, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 9>
+ice-Based Businesses.pdf, page 10>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page9 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page10 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 9>
+ice-Based Businesses.pdf, page 10>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page9 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page10 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2741,9 +2744,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 9>
+ice-Based Businesses.pdf, page 10>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page9 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page10 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [58
 
@@ -2754,20 +2757,20 @@ pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
 ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
 <Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=893, page=10, 614.295pt x 794.97pt>
+Based Businesses.pdf, id=894, page=11, 614.295pt x 794.97pt>
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 10>
+ice-Based Businesses.pdf, page 11>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page10 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page11 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 10>
+ice-Based Businesses.pdf, page 11>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page10 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page11 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2779,55 +2782,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
 vice-Based Businesses.pdf Graphic file (type pdf)
 <use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 10>
+ice-Based Businesses.pdf, page 11>
 Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page10 used on input line 13.
+ng Platform for Service-Based Businesses.pdf , page11 used on input line 21.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 [59
-
- <./Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Servi
-ce-Based Businesses.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./Slotify_ A Smart Web-Based Online Appointm
-ent Scheduling Platform for Service-Based Businesses.pdf): PDF inclusion: found
- PDF version <1.7>, but at most version <1.5> allowed
-<Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Service-
-Based Businesses.pdf, id=898, page=11, 614.295pt x 794.97pt>
-File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
-vice-Based Businesses.pdf Graphic file (type pdf)
-<use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 11>
-Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page11 used on input line 13.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
-vice-Based Businesses.pdf Graphic file (type pdf)
-<use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 11>
-Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page11 used on input line 13.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-File: Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Ser
-vice-Based Businesses.pdf Graphic file (type pdf)
-<use Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Serv
-ice-Based Businesses.pdf, page 11>
-Package pdftex.def Info: Slotify_ A Smart Web-Based Online Appointment Scheduli
-ng Platform for Service-Based Businesses.pdf , page11 used on input line 13.
-(pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
-[60
 
  <./Slotify_ A Smart Web-Based Online Appointment Scheduling Platform for Servi
 ce-Based Businesses.pdf>])
 \openout2 = `Bibilio.aux'.
 
- (Bibilio.tex [61
+ (Bibilio.tex [60
 
 
 
@@ -2840,7 +2805,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[62]
+[61]
 
 Package caption Warning: Unused \captionsetup[sub] on input line 40.
 See the caption package documentation for explanation.
@@ -2853,19 +2818,15 @@ See the caption package documentation for explanation.
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 0FF12DBAA685A721DBC51F1542D2B3F9;10790.
  ) 
 Here is how much of TeX's memory you used:
- 26303 strings out of 467441
- 467933 string characters out of 5407591
- 868532 words of memory out of 5000000
+ 26302 strings out of 467441
+ 467926 string characters out of 5407591
+ 868533 words of memory out of 5000000
  54605 multiletter control sequences out of 15000+600000
- 699557 words of font info for 359 fonts, out of 8000000 for 9000
+ 699561 words of font info for 359 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,17n,83p,1790b,681s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DAKSH/AppData/Local/Programs/MiKTeX/fonts/type1/public/mnsymbol/MnS
@@ -2878,9 +2839,9 @@ MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/DAKSH/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/DAKSH/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/DAKSH/AppData/Local/Programs
 /MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (72 pages, 9984022 bytes).
+Output written on main.pdf (71 pages, 9983332 bytes).
 PDF statistics:
- 1010 PDF objects out of 1200 (max. 8388607)
- 198 named destinations out of 1000 (max. 500000)
+ 1006 PDF objects out of 1200 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
  83695 words of extra memory for PDF output out of 89155 (max. 10000000)
 
