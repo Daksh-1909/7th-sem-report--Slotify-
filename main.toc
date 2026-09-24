@@ -5,67 +5,67 @@
 \contentsline {chapter}{List of Figures}{x}{section*.9}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Problem Statement}{1}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Problem Statement}{2}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Project Objectives}{2}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Scope}{2}{section.1.4}%
-\contentsline {section}{\numberline {1.5}System Overview}{2}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Technology Stack}{3}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Literature Survey}{5}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Overview}{5}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Paper Reviews}{6}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Comparison of Existing Platforms}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Reminder Effectiveness}{7}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Research Gap / What the Review Did Not Resolve}{7}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Software Requirements Specification (SRS)}{9}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Purpose and Scope}{9}{section.3.1}%
-\contentsline {section}{\numberline {3.2}User Roles}{9}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Customer}{9}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Business Admin}{9}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Staff Member}{9}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Reception / Walk-In User}{10}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Functional Requirements}{10}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Non-Functional Requirements}{10}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Use Case Diagram}{10}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Constraints}{10}{section.3.6}%
-\contentsline {chapter}{\numberline {4}System Design}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Architecture Overview}{13}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Database Design}{13}{section.4.2}%
-\contentsline {section}{\numberline {4.3}API Design}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Booking Workflow}{15}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Security Design}{15}{section.4.5}%
-\contentsline {section}{\numberline {4.6}UI Design Principles}{16}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Methodology}{17}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Development Approach}{17}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Phase 1: Requirements Gathering}{17}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Phase 2: System Design}{17}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Phase 3: Implementation}{18}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Phase 4: Testing}{18}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Tools and Environment}{18}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Implementation}{20}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Backend Implementation}{20}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Project Structure}{20}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Slot Availability Logic}{20}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Authentication Middleware}{21}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Email Notification Service}{21}{subsection.6.1.4}%
-\contentsline {section}{\numberline {6.2}Frontend Implementation}{21}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Project Structure}{21}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Real-Time Slot Display}{22}{subsection.6.2.2}%
-\contentsline {subsection}{\numberline {6.2.3}State Management and Prop Drilling Refactor}{22}{subsection.6.2.3}%
-\contentsline {section}{\numberline {6.3}Implementation Status}{23}{section.6.3}%
-\contentsline {chapter}{\numberline {7}Conclusion}{25}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary of Work Done}{25}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Objectives Met}{25}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Challenges Encountered}{25}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Key Takeaways}{26}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Future Work}{27}{chapter.8}%
-\contentsline {section}{\numberline {8.1}What Comes Next}{27}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Payment Integration}{27}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Mobile Application}{27}{section.8.3}%
-\contentsline {section}{\numberline {8.4}AI-Based Slot Recommendations}{27}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Advanced Analytics}{28}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Multi-Language Support}{28}{section.8.6}%
-\contentsline {section}{\numberline {8.7}Multi-Branch Business Support}{28}{section.8.7}%
-\contentsline {chapter}{\numberline {9}Research Paper / Survey Paper and Plagiarism Report}{29}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Research Paper}{29}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Plagiarism Report}{38}{section.9.2}%
-\contentsline {chapter}{References}{50}{chapter*.34}%
+\contentsline {section}{\numberline {1.4}Scope}{3}{section.1.4}%
+\contentsline {section}{\numberline {1.5}System Overview}{3}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Technology Stack}{4}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Literature Survey}{7}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Overview}{7}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Paper Reviews}{8}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Comparison of Existing Platforms}{9}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Reminder Effectiveness}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Research Gap / What the Review Did Not Resolve}{11}{section.2.5}%
+\contentsline {chapter}{\numberline {3}Software Requirements Specification (SRS)}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Purpose and Scope}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}User Roles}{12}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Customer}{12}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Business Admin}{13}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Staff Member}{13}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Reception / Walk-In User}{13}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Functional Requirements}{13}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Non-Functional Requirements}{14}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Use Case Diagram}{15}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Constraints}{16}{section.3.6}%
+\contentsline {chapter}{\numberline {4}System Design}{17}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Architecture Overview}{17}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Database Design}{17}{section.4.2}%
+\contentsline {section}{\numberline {4.3}API Design}{18}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Booking Workflow}{19}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Security Design}{20}{section.4.5}%
+\contentsline {section}{\numberline {4.6}UI Design Principles}{21}{section.4.6}%
+\contentsline {chapter}{\numberline {5}Methodology}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Development Approach}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Phase 1: Requirements Gathering}{22}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Phase 2: System Design}{23}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Phase 3: Implementation}{23}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Phase 4: Testing}{23}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Tools and Environment}{24}{section.5.6}%
+\contentsline {chapter}{\numberline {6}Implementation}{26}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Backend Implementation}{26}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Project Structure}{26}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Slot Availability Logic}{26}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Authentication Middleware}{27}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Email Notification Service}{28}{subsection.6.1.4}%
+\contentsline {section}{\numberline {6.2}Frontend Implementation}{28}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Project Structure}{28}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Real-Time Slot Display}{28}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}State Management and Prop Drilling Refactor}{29}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}Implementation Status}{30}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Conclusion}{32}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Summary of Work Done}{32}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Objectives Met}{32}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Challenges Encountered}{32}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Key Takeaways}{33}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Future Work}{34}{chapter.8}%
+\contentsline {section}{\numberline {8.1}What Comes Next}{34}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Payment Integration}{34}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Mobile Application}{34}{section.8.3}%
+\contentsline {section}{\numberline {8.4}AI-Based Slot Recommendations}{34}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Advanced Analytics}{35}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Multi-Language Support}{35}{section.8.6}%
+\contentsline {section}{\numberline {8.7}Multi-Branch Business Support}{35}{section.8.7}%
+\contentsline {chapter}{\numberline {9}Research Paper / Survey Paper and Plagiarism Report}{36}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Research Paper}{36}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Plagiarism Report}{45}{section.9.2}%
+\contentsline {chapter}{References}{57}{chapter*.34}%

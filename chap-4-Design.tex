@@ -1,9 +1,9 @@
 \chapter{System Design}
 
 \section{Architecture Overview}
-The architecture of Slotify is designed as a modular, multi-tier system that separates the user interface, application logic, and underlying data management. The frontend is responsible for user interaction, while the backend handles business logic, validation, notifications, and access control. A database layer stores all business, appointment, and user information in a structured and secure manner.
+The core architecture of Slotify is intentionally designed as a robust, highly modular, multi-tier system that cleanly separates the user interface presentation layer, the core application business logic, and the underlying data management storage. The frontend (client-side) is exclusively responsible for handling all user interaction, rendering dynamic views based on state, and capturing user input. Meanwhile, the backend (server-side) acts as the central brain of the application, autonomously handling complex business logic, strict data validation, asynchronous notifications, and rigorous access control checks before any data is written or returned. Beneath this, a robust database layer persistently stores all registered business profiles, real-time appointment logs, and sensitive user information in a structured, query-optimized, and highly secure manner.
 
-The design follows a multitiered approach so each component can be developed, maintained, and scaled independently. This structure also supports future extension, such as additional business modules or external integrations.
+This deliberate design follows a classic multitiered (or N-tier) architectural approach, ensuring that each distinct component can be developed, rigorously tested, deployed, maintained, and scaled entirely independently of the others. For example, if the frontend requires a visual overhaul, the backend API remains completely untouched. This decoupled structure also heavily supports future vertical and horizontal extension, such as effortlessly plugging in additional business modules, developing a native mobile application client, or creating secure external integrations for third-party accounting or calendar synchronization tools.
 
 \begin{figure}[h]
 \centering
@@ -12,7 +12,7 @@ The design follows a multitiered approach so each component can be developed, ma
 \end{figure}
 
 \section{Database Design}
-The database is designed to support multiple businesses, users, appointments, services, and staff records while maintaining data integrity. Business data is stored separately for each tenant, and appointment records are connected to the relevant business and staff member. This approach ensures that scheduling operations are isolated and accurate.
+The database schema is meticulously designed from the ground up to natively support a complex multi-tenant environment, seamlessly managing multiple independent businesses, thousands of registered users, dynamic appointments, diverse service catalogs, and variable staff records simultaneously, all while rigorously maintaining absolute data integrity. Business data is securely partitioned and logically stored separately for each tenant via unique identifiers, and every single appointment record is inherently connected via foreign key relationships to the relevant parent business, the specific requested service, and the assigned staff member. This strict relational-style approach within a flexible NoSQL environment ensures that scheduling operations are perfectly isolated, structurally accurate, and safe from cross-tenant data leaks.
 
 \begin{figure}[h]
 \centering
@@ -20,12 +20,12 @@ The database is designed to support multiple businesses, users, appointments, se
 \caption{Database model and relationship flow for business, staff, and appointments}
 \end{figure}
 
-Key entities include users, businesses, services, staff, appointments, reviews, and notifications. The schema is designed to support both routine operations and future analytics. Important fields such as appointment date, start time, service duration, and staff assignment are carefully captured to avoid conflicts and maintain historical accuracy.
+Key domain entities mapped in the database include users, business profiles, customizable services, staff directories, appointment reservations, customer reviews, and automated notifications. The overarching schema is explicitly designed to support not just lightning-fast routine CRUD (Create, Read, Update, Delete) operations, but also complex aggregation queries required for future business analytics. Important operational fields such as the precise appointment date, the exact start time in UTC, the total calculated service duration (including buffer times), and the specific staff assignment ID are carefully and atomically captured during the transaction to unconditionally avoid scheduling conflicts and to maintain a highly reliable, auditable historical record.
 
 \section{API Design}
-The Slotify backend exposes a set of REST APIs to support authentication, business discovery, appointment creation, review handling, and analytics. These APIs are organized by domain and designed for clear separation of concerns. The appointment API handles availability checks and booking creation, while the auth API manages user login, registration, and token validation.
+The Slotify backend systematically exposes a comprehensive suite of RESTful (Representational State Transfer) APIs designed to securely support all client-side operations, including strict authentication, geospatial business discovery, atomic appointment creation, review handling, and analytical data retrieval. These APIs are logically organized by domain resource and meticulously designed following REST best practices for a clear separation of concerns. For instance, the appointment API exclusively handles availability algorithmic checks, slot locks, and booking creation, while the auth API independently manages user login, secure registration, password resets, and JWT token issuing and validation.
 
-This API structure makes the system easier to extend and maintain. Future modules such as payment processing, analytics, or branch management can be integrated without disrupting existing endpoints.
+This structured, predictable API design makes the entire system significantly easier to document, confidently extend, and maintain over long lifecycles. Because the backend acts simply as a data provider, future specialized modules such as complex payment processing gateways, deep data analytics engines, or multi-branch management systems can be seamlessly integrated by adding new endpoints without disrupting or breaking the existing, stable API contracts relied upon by the frontend.
 
 \begin{table}[h]
 \centering
@@ -48,7 +48,7 @@ Notification Service & Sends confirmations and reminder emails to customers and 
 \end{table}
 
 \section{Booking Workflow}
-The booking workflow begins when a customer selects a business and service. The system then checks real-time availability for the chosen staff member or next available option. If a valid slot is found, the booking is created with relevant service details and scheduling metadata.
+The booking workflow is the most critical path in the system and begins the moment a customer seamlessly selects a specific business profile and a desired service. The system then rapidly queries the database and runs a complex algorithm to calculate real-time availability for the user's chosen staff member, or intelligently defaults to the next available option if no preference is given. If a mathematically valid, non-overlapping slot is found that perfectly satisfies the business hours, staff shifts, and service duration, the booking is atomically created and securely saved with all relevant service details and vital scheduling metadata.
 
 \begin{table}[h]
 \centering
@@ -70,14 +70,14 @@ Schedule Update & The business schedule and admin records are updated for correc
 \end{tabular}
 \end{table}
 
-After booking, the system sends confirmation and reminder notifications and updates the business schedule. The workflow ensures that the slot is reserved only if all validations pass, reducing the risk of double booking and scheduling confusion.
+Immediately after a successful booking transaction is committed to the database, the system asynchronously triggers background jobs to send beautifully formatted confirmation emails and schedule future reminder notifications. Simultaneously, it instantly updates the business's internal master schedule. This carefully orchestrated workflow ensures that the requested time slot is permanently reserved only if all rigorous backend validations pass successfully, essentially eliminating the terrifying risk of double booking and the resulting scheduling confusion that plagues manual systems.
 
 \section{Security Design}
-Security is an essential part of the Slotify design. User authentication is enforced through secure token-based mechanisms, and role-based access control prevents unauthorized actions. Business-specific data is protected so one business cannot access another business's records.
+Security is not an afterthought, but an absolutely essential, foundational part of the Slotify system design. User authentication is strictly enforced through highly secure, stateless JSON Web Token (JWT) mechanisms, and rigorous server-side role-based access control (RBAC) middleware proactively prevents unauthorized actions before they reach the controller logic. Crucially, business-specific data is cryptographically protected and logically isolated so that one business owner can never, under any circumstances, access, view, or modify another competing business's confidential client records.
 
-Additional security considerations include validation of business ownership, prevention of unauthorized modifications, and controlled access to sensitive appointment data. These safeguards are important in a platform that handles customer and business information on a shared system.
+Additional multi-layered security considerations explicitly include the strict algorithmic validation of business ownership before allowing edits, the implementation of rate limiting to prevent unauthorized automated modifications or scraping, and tightly controlled, scoped access to sensitive, personally identifiable appointment data. These enterprise-grade safeguards are critically important in a multi-tenant SaaS platform that is responsible for handling sensitive customer contact details and proprietary business operational information on a shared cloud infrastructure.
 
 \section{UI Design Principles}
-The front-end design emphasizes simplicity, clarity, and speed. The user interface is designed to make it easy for customers to find services, check availability, and complete bookings without confusion. Business users also require dashboards that are intuitive and allow quick actions such as scheduling and managing appointments.
+The front-end UI design philosophy heavily emphasizes extreme simplicity, visual clarity, and lightning-fast responsiveness. The customer-facing user interface is meticulously designed, utilizing modern UI/UX principles, to make it incredibly easy for customers to effortlessly find local services, instantly check real-time availability on a clean calendar interface, and smoothly complete bookings in just a few clicks without any cognitive confusion. On the other hand, business users natively require powerful, data-rich dashboards that are highly intuitive and strategically allow for rapid, bulk actions such as seamlessly adjusting staff schedules, approving appointments, and managing complex daily operations at a glance.
 
-The user interface follows an accessible and consistent design approach to support usage across different devices and user roles. This helps create a smooth experience for customers, staff, and administrators while preserving usability across the application.
+The entire user interface strictly follows a highly accessible, component-driven, and visually consistent design approach to fully support flawless usage across a wide myriad of different devices, screen sizes (from large desktop monitors to small mobile screens), and distinct user roles. This deep commitment to design systems helps create a remarkably smooth, professional experience for customers, front-desk staff, and backend administrators alike, while actively preserving long-term usability and brand consistency across the entire breadth of the application.

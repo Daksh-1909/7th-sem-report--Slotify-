@@ -1,40 +1,40 @@
 \chapter{Software Requirements Specification (SRS)}
 
 \section{Purpose and Scope}
-The purpose of Slotify is to provide a digital appointment booking system for service-based businesses that need a reliable way to manage appointments, staff schedules, and customer communication. The system is designed to support online booking, walk-in scheduling, confirmation notifications, and business-level analytics while reducing manual coordination and scheduling errors.
+The primary purpose of Slotify is to securely provide a comprehensive, fully digital appointment booking system explicitly designed for service-based businesses. These businesses urgently need a highly reliable, always-on way to accurately manage incoming appointments, balance staff schedules across different shifts, and maintain continuous, professional customer communication. The system is fundamentally designed to support 24/7 online booking, accommodate impromptu walk-in scheduling at the front desk, dispatch automated confirmation and reminder notifications via email, and supply business owners with high-level analytics. By centralizing these operations, the system drastically reduces the need for manual coordination, mitigates the risk of human-induced scheduling errors, and elevates the overall professional image of the business.
 
-The scope of the project includes customer booking, staff management, business administration, automated notifications, and real-time slot validation. The application is focused on service-oriented businesses such as salons, clinics, therapy centers, and repair shops, where appointment timing and service duration are essential to daily operations.
+The extensive scope of the project purposefully includes a robust customer-facing booking interface, granular staff management tools, a powerful administrative dashboard for business oversight, intelligent automated notifications, and strict real-time slot validation to prevent overlaps. The application is entirely focused on fulfilling the needs of service-oriented businesses such as hair salons, specialized medical clinics, physical therapy centers, and automotive repair shops. In these highly dynamic environments, precise appointment timing and accurate service duration tracking are absolutely essential to maintaining smooth daily operations, minimizing waiting room congestion, and maximizing daily revenue.
 
 \section{User Roles}
 The system supports multiple user roles with distinct responsibilities and access rights.
 
 \subsection{Customer}
-Customers can search for businesses, view available services, select time slots, and book appointments online. They also receive confirmations and reminders and may provide feedback after a completed service.
+Customers are the end-users who interact with the frontend of the platform to schedule their visits. They can intuitively search for specific businesses by name or category, view clearly listed available services and their respective durations, select convenient time slots based on real-time availability, and securely book appointments online from their personal devices. Following a booking, they also automatically receive structured email confirmations and timely reminders to ensure they do not miss their slot, and they may be prompted to provide valuable feedback after a completed service session.
 
 \subsection{Business Admin}
-Business administrators manage working hours, service pricing, staff profiles, and business policies. They can monitor bookings, manage staff schedules, and review business performance.
+Business administrators are typically the business owners or senior managers who require full control over the operational parameters of the establishment. They possess elevated privileges to meticulously manage the business's core working hours, configure service offerings and their associated pricing, onboard and manage detailed staff profiles, and enforce global business policies (such as cancellation rules). Furthermore, they can holistically monitor all incoming and historical bookings, actively manage staff schedules to prevent burnout, and review aggregated business performance metrics through an interactive dashboard.
 
 \subsection{Staff Member}
-Staff members can view their assigned appointments, confirm attendance, and complete service sessions. They are also responsible for maintaining an accurate schedule for the business.
+Staff members are the actual service providers, such as stylists, doctors, or technicians, who execute the booked services. They can securely log into their individual portals to view their daily or weekly assigned appointments, confirm their attendance, block out specific times for breaks, and officially mark service sessions as completed. They play a crucial role in maintaining an accurate, up-to-date schedule for the business by dynamically updating their availability status, which directly influences what time slots are shown to customers.
 
 \subsection{Reception / Walk-In User}
-The receptionist or front desk user can create walk-in bookings for customers who do not book online. This role helps bridge the gap between digital and physical operations.
+The receptionist or front desk user operates as the operational bridge between the physical storefront and the digital scheduling system. This role is specifically designed to create manual, walk-in bookings for customers who arrive without prior notice or for those who prefer to book their next appointment in person before leaving. This crucial role ensures that the digital calendar remains a true reflection of the physical occupancy of the business, preventing conflicts between online bookers and walk-in clients.
 
 \section{Functional Requirements}
 Slotify must provide functional capabilities that support appointment booking, schedule management, communication, and reporting.
 
 \begin{itemize}
-\item The system must allow a customer to browse a business and select a service.
-\item The system must display valid time slots based on business hours, staff availability, and existing bookings.
-\item The system must prevent double booking through validation and database-level constraints.
-\item The system must generate confirmation emails and reminder notifications.
-\item The system must support the creation of walk-in appointments from the admin panel.
-\item The system must allow staff and admins to manage bookings and status changes.
-\item The system must support review submission after a completed appointment.
+\item The system must intuitively allow a customer to browse a registered business profile, view its specific details, and seamlessly select a desired service from a categorized list.
+\item The system must dynamically calculate and display only strictly valid time slots based on a complex intersection of the business's operating hours, the specific selected staff member's availability, the duration of the chosen service, and any pre-existing bookings.
+\item The system must strictly prevent double booking at all costs through robust server-side validation and atomic database-level constraints, even when multiple users attempt to book the exact same slot concurrently.
+\item The system must automatically generate and dispatch richly formatted confirmation emails immediately upon successful booking, and trigger scheduled reminder notifications a predetermined time before the appointment to minimize no-shows.
+\item The system must explicitly support the rapid creation of walk-in appointments directly from the admin or receptionist panel to accommodate physical customers without requiring them to create a digital account.
+\item The system must securely allow authenticated staff and admins to view, edit, reschedule, or cancel bookings, as well as seamlessly track status changes (e.g., pending, completed, cancelled) throughout the appointment lifecycle.
+\item The system must optionally support a structured review submission process after a completed appointment, allowing businesses to gather critical customer feedback and continuously improve their service quality.
 \end{itemize}
 
 \section{Non-Functional Requirements}
-The application should be reliable, fast, secure, and easy to maintain. Performance is critical during peak booking periods when multiple customers may attempt to reserve the same available time slot. Security must be enforced through authentication, role-based access control, and tenant isolation. Maintainability also matters because the system may be extended with payment integration, analytics, and mobile support in future iterations.
+The application should be structurally reliable, highly performant, rigorously secure, and architected in a way that is easy to maintain and scale over time. Performance is absolutely critical, especially during peak booking periods (such as weekends or holiday seasons) when multiple customers may concurrently query availability or attempt to reserve the exact same highly sought-after time slot. The system must process these requests with minimal latency to provide a snappy user experience. Security must be strictly enforced at every layer through robust token-based authentication, explicit role-based access control (RBAC), and strict multi-tenant data isolation to ensure that one business can never accidentally or maliciously access another business's proprietary client data. Maintainability also matters immensely because the system is designed to be iteratively extended with complex future features such as native payment integration, advanced predictive analytics, and dedicated mobile application support. Therefore, the codebase must remain clean, thoroughly documented, and modular.
 
 \begin{table}[h]
 \centering
